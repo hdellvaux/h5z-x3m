@@ -7,13 +7,13 @@
       "type": "Déj",
       "plat": "Bowl poulet-quinoa",
       "items": [
-        { "pilier": "proteine", "texte": "150g poulet poêlé" },
-        { "pilier": "glucide", "texte": "1 main creuse quinoa" },
-        { "pilier": "legume", "texte": "2 poings roquette" },
-        { "pilier": "legume", "texte": "tomates cerises" },
-        { "pilier": "gras", "texte": "½ avocat" },
-        { "pilier": "gras", "texte": "filet d'huile d'olive" },
-        { "pilier": "fruit", "texte": "1 pomme" }
+        { "pilier": "proteine", "nom": "poulet poêlé", "qte": "150g" },
+        { "pilier": "glucide", "nom": "quinoa", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "roquette", "qte": "2 poings" },
+        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
+        { "pilier": "gras", "nom": "avocat", "qte": "½" },
+        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
       ]
     },
     {
@@ -21,12 +21,12 @@
       "type": "Déj",
       "plat": "Omelette gourmande",
       "items": [
-        { "pilier": "proteine", "texte": "omelette 3 œufs" },
-        { "pilier": "legume", "texte": "2 poings épinards" },
-        { "pilier": "gras", "texte": "30g feta" },
-        { "pilier": "legume", "texte": "salade verte" },
-        { "pilier": "glucide", "texte": "2 tr. pain complet" },
-        { "pilier": "fruit", "texte": "1 fruit" }
+        { "pilier": "proteine", "nom": "omelette", "qte": "3 œufs" },
+        { "pilier": "legume", "nom": "épinards", "qte": "2 poings" },
+        { "pilier": "gras", "nom": "feta", "qte": "30g" },
+        { "pilier": "legume", "nom": "salade verte", "qte": "" },
+        { "pilier": "glucide", "nom": "pain complet", "qte": "2 tr." },
+        { "pilier": "fruit", "nom": "fruit", "qte": "1" }
       ]
     },
     {
@@ -34,11 +34,11 @@
       "type": "Dîner",
       "plat": "Tartines musclées",
       "items": [
-        { "pilier": "glucide", "texte": "2 tr. pain seigle" },
-        { "pilier": "gras", "texte": "½ avocat" },
-        { "pilier": "proteine", "texte": "3 œufs durs" },
-        { "pilier": "proteine", "texte": "100g saumon fumé" },
-        { "pilier": "legume", "texte": "poignée roquette" }
+        { "pilier": "glucide", "nom": "pain seigle", "qte": "2 tr." },
+        { "pilier": "gras", "nom": "avocat", "qte": "½" },
+        { "pilier": "proteine", "nom": "œufs durs", "qte": "3" },
+        { "pilier": "proteine", "nom": "saumon fumé", "qte": "100g" },
+        { "pilier": "legume", "nom": "roquette", "qte": "poignée" }
       ]
     },
     {
@@ -46,12 +46,12 @@
       "type": "Dîner",
       "plat": "Bowl méditerranéen",
       "items": [
-        { "pilier": "glucide", "texte": "½ bocal lentilles" },
-        { "pilier": "proteine", "texte": "1 boîte maquereaux" },
-        { "pilier": "legume", "texte": "tomates cerises" },
-        { "pilier": "gras", "texte": "½ avocat" },
-        { "pilier": "gras", "texte": "filet d'huile d'olive" },
-        { "pilier": "extra", "texte": "citron" }
+        { "pilier": "glucide", "nom": "lentilles", "qte": "½ bocal" },
+        { "pilier": "proteine", "nom": "maquereaux", "qte": "1 boîte" },
+        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
+        { "pilier": "gras", "nom": "avocat", "qte": "½" },
+        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "extra", "nom": "citron", "qte": "" }
       ]
     },
     {
@@ -59,12 +59,12 @@
       "type": "Dîner",
       "plat": "Assiette mezze",
       "items": [
-        { "pilier": "proteine", "texte": "houmous" },
-        { "pilier": "glucide", "texte": "½ bocal pois chiches" },
-        { "pilier": "legume", "texte": "concombre" },
-        { "pilier": "gras", "texte": "olives Kalamata" },
-        { "pilier": "legume", "texte": "tomates cerises" },
-        { "pilier": "glucide", "texte": "2 tr. pain complet" }
+        { "pilier": "proteine", "nom": "houmous", "qte": "" },
+        { "pilier": "glucide", "nom": "pois chiches", "qte": "½ bocal" },
+        { "pilier": "legume", "nom": "concombre", "qte": "" },
+        { "pilier": "gras", "nom": "olives Kalamata", "qte": "" },
+        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
+        { "pilier": "glucide", "nom": "pain complet", "qte": "2 tr." }
       ]
     },
     {
@@ -72,12 +72,12 @@
       "type": "Dîner",
       "plat": "Assiette nordique",
       "items": [
-        { "pilier": "proteine", "texte": "100g saumon fumé" },
-        { "pilier": "proteine", "texte": "3 œufs durs" },
-        { "pilier": "legume", "texte": "concombre" },
-        { "pilier": "gras", "texte": "½ avocat" },
-        { "pilier": "glucide", "texte": "2 tr. pain seigle" },
-        { "pilier": "extra", "texte": "citron" }
+        { "pilier": "proteine", "nom": "saumon fumé", "qte": "100g" },
+        { "pilier": "proteine", "nom": "œufs durs", "qte": "3" },
+        { "pilier": "legume", "nom": "concombre", "qte": "" },
+        { "pilier": "gras", "nom": "avocat", "qte": "½" },
+        { "pilier": "glucide", "nom": "pain seigle", "qte": "2 tr." },
+        { "pilier": "extra", "nom": "citron", "qte": "" }
       ]
     },
     {
@@ -85,11 +85,11 @@
       "type": "Dîner",
       "plat": "Petit-déj du soir",
       "items": [
-        { "pilier": "proteine", "texte": "1 pot skyr 250g" },
-        { "pilier": "fruit", "texte": "1 poing myrtilles" },
-        { "pilier": "gras", "texte": "30g amandes" },
-        { "pilier": "glucide", "texte": "1 c.à.s flocons d'avoine" },
-        { "pilier": "extra", "texte": "filet de miel" }
+        { "pilier": "proteine", "nom": "skyr", "qte": "1 pot 250g" },
+        { "pilier": "fruit", "nom": "myrtilles", "qte": "1 poing" },
+        { "pilier": "gras", "nom": "amandes", "qte": "30g" },
+        { "pilier": "glucide", "nom": "flocons d'avoine", "qte": "1 c.à.s" },
+        { "pilier": "extra", "nom": "miel", "qte": "filet" }
       ]
     },
     {
@@ -97,12 +97,12 @@
       "type": "Post-soirée",
       "plat": "Brunch de récupération",
       "items": [
-        { "pilier": "proteine", "texte": "3 œufs brouillés" },
-        { "pilier": "proteine", "texte": "2 tr. bacon" },
-        { "pilier": "gras", "texte": "½ avocat" },
-        { "pilier": "glucide", "texte": "2 tr. pain complet grillé" },
-        { "pilier": "legume", "texte": "tomates cerises" },
-        { "pilier": "fruit", "texte": "1 fruit" }
+        { "pilier": "proteine", "nom": "œufs brouillés", "qte": "3" },
+        { "pilier": "proteine", "nom": "bacon", "qte": "2 tr." },
+        { "pilier": "gras", "nom": "avocat", "qte": "½" },
+        { "pilier": "glucide", "nom": "pain complet grillé", "qte": "2 tr." },
+        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
+        { "pilier": "fruit", "nom": "fruit", "qte": "1" }
       ]
     }
   ]

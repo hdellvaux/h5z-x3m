@@ -169,7 +169,8 @@
     line-height: 1;
   }
   .meal__item .pill--extra { color: var(--accent-dim); font-size: 1.1rem; }
-  .meal__item .qty { color: var(--ink); font-weight: 600; }
+  .meal__item .nom { color: var(--ink); font-weight: 400; }
+  .meal__item .qte { color: var(--ink-soft); font-weight: 400; font-style: italic; }
 
   /* ---------- portions footer ---------- */
   .portions {
@@ -286,16 +287,15 @@
       });
     }
 
-    // Wrap a leading quantity token in <span class="qty"> so portions stand
-    // out. e.g. "2 tr. pain seigle" -> "2 tr." bolded. Returns escaped HTML.
-    function boldQty(text) {
-      var item = String(text).trim();
-      var m = item.match(/^([0-9¼½¾.,]+\s*(?:tr\.|g|cl|c\.à\.s|c\.à\.c|main(?:s)?(?:\screuse)?|pot|bocal|boîte|paume(?:s)?|poing(?:s)?|pouce(?:s)?)?|poignée|filet|½|¼)\b\s*/i);
-      if (m && m[0].trim()) {
-        var qtyLen = m[0].trim().length;
-        return '<span class="qty">' + escape(item.slice(0, qtyLen)) + "</span>" + escape(item.slice(qtyLen));
+    // Render one ingredient's label: bold name first, then the quantity in
+    // lighter normal weight. Falls back to a legacy `texte` string if present.
+    function ingredientLabel(it) {
+      if (it.nom != null) {
+        var nom = '<span class="nom">' + escape(it.nom) + "</span>";
+        var qte = it.qte ? ' <span class="qte">' + escape(it.qte) + "</span>" : "";
+        return nom + qte;
       }
-      return escape(item);
+      return '<span class="nom">' + escape(it.texte || "") + "</span>";
     }
 
     // Render a meal's ingredients as a bulleted list, each tagged with its
@@ -308,7 +308,7 @@
         return (
           '<li class="meal__item">' +
             '<span class="' + cls + '" aria-hidden="true">' + glyph + "</span>" +
-            "<span>" + boldQty(it.texte || "") + "</span>" +
+            "<span>" + ingredientLabel(it) + "</span>" +
           "</li>"
         );
       }).join("") + "</ul>";
