@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#efe6d4" />
+<title>Menu de la semaine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper:      #efe6d4;
+    --paper-deep: #e7dcc6;
+    --card:       #f6efe1;
+    --ink:        #2a2620;
+    --ink-soft:   #6c6356;
+    --accent:     #b9532e;
+    --accent-dim: #c98a5e;
+    --line:       #d8ccb4;
+    --serif: "Fraunces", Georgia, serif;
+    --sans:  "Hanken Grotesk", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background-color: var(--paper);
+    background-image:
+      radial-gradient(120% 90% at 50% -10%, #f5eddc 0%, var(--paper) 42%, var(--paper-deep) 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    line-height: 1.5;
+    padding: clamp(1.4rem, 5vw, 3.5rem) clamp(1rem, 5vw, 2rem) 4rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* faint paper grain */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+
+  .sheet {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* ---------- header ---------- */
+  header { text-align: center; margin-bottom: clamp(1.8rem, 6vw, 3rem); }
+
+  .kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2.3rem, 11vw, 3.4rem);
+    line-height: 0.98;
+    letter-spacing: -0.01em;
+    font-optical-sizing: auto;
+  }
+
+  .week {
+    margin-top: 0.9rem;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1rem, 4.2vw, 1.18rem);
+    color: var(--ink-soft);
+  }
+  .maj {
+    margin-top: 0.25rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-dim);
+  }
+
+  .rule {
+    width: 46px;
+    height: 1px;
+    background: var(--accent);
+    margin: 1.4rem auto 0;
+  }
+
+  /* ---------- meals ---------- */
+  .meals { list-style: none; }
+
+  .meal {
+    padding: clamp(1.1rem, 4vw, 1.5rem) 0;
+    border-top: 1px solid var(--line);
+    opacity: 0;
+    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .meal:first-child { border-top: none; }
+
+  .meal__head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-bottom: 0.35rem;
+  }
+  .meal__day {
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .meal__type {
+    font-size: 0.64rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent-dim);
+    border-radius: 999px;
+    padding: 0.14em 0.6em;
+    white-space: nowrap;
+  }
+
+  .meal__plat {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(1.35rem, 5.6vw, 1.6rem);
+    line-height: 1.12;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.005em;
+  }
+
+  .meal__detail {
+    font-size: 0.96rem;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .meal__detail .sep { color: var(--accent-dim); padding: 0 0.12em; }
+  .meal__detail .qty { color: var(--ink); font-weight: 600; }
+
+  /* ---------- portions footer ---------- */
+  .portions {
+    margin-top: clamp(2.2rem, 8vw, 3.2rem);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: clamp(1.2rem, 5vw, 1.7rem);
+    opacity: 0;
+    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .portions h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.16rem;
+    margin-bottom: 0.2rem;
+  }
+  .portions .sub {
+    font-size: 0.74rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  .portions dl { display: grid; gap: 0; }
+  .portions .row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    padding: 0.55rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .portions .row:first-of-type { border-top: none; }
+  .portions .emoji { font-size: 1.05rem; width: 1.4em; text-align: center; flex: none; }
+  .portions dt { font-weight: 600; min-width: 5.2rem; flex: none; }
+  .portions dd { color: var(--ink-soft); font-size: 0.95rem; }
+
+  footer.note {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: var(--accent-dim);
+  }
+
+  /* ---------- empty / error state ---------- */
+  .empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+  }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .meal, .portions { animation: none; opacity: 1; }
+  }
+</style>
+</head>
+<body>
+  <main class="sheet">
+    <header>
+      <div class="kicker">À table</div>
+      <h1>Menu de&nbsp;la&nbsp;semaine</h1>
+      <div class="week" id="week">&nbsp;</div>
+      <div class="maj" id="maj"></div>
+      <div class="rule"></div>
+    </header>
+
+    <ul class="meals" id="meals"></ul>
+
+    <section class="portions" aria-label="Rappel des portions">
+      <h2>Rappel des portions</h2>
+      <div class="sub">La main comme balance</div>
+      <dl>
+        <div class="row"><span class="emoji">🥩</span><dt>Protéine</dt><dd>1,5 à 2 paumes</dd></div>
+        <div class="row"><span class="emoji">🌾</span><dt>Glucide</dt><dd>1 à 1,5 main creuse</dd></div>
+        <div class="row"><span class="emoji">🥑</span><dt>Bon gras</dt><dd>1 à 2 pouces</dd></div>
+        <div class="row"><span class="emoji">🥬</span><dt>Légume</dt><dd>1 à 2 poings</dd></div>
+        <div class="row"><span class="emoji">🍓</span><dt>Fruit</dt><dd>1 poing</dd></div>
+      </dl>
+    </section>
+
+    <footer class="note">Picnic · validé à la main dans l'app</footer>
+  </main>
+
+<script>
+  // Render the week's portioned menu from menu.json.
+  // Architecture: this file is static; only menu.json changes each week.
+  (function () {
+    var weekEl  = document.getElementById("week");
+    var majEl   = document.getElementById("maj");
+    var listEl  = document.getElementById("meals");
+
+    // Highlight leading quantities in a detail line so portions stand out.
+    // e.g. "2 tr. pain seigle" -> the "2 tr." is wrapped as .qty
+    function formatDetail(detail) {
+      var parts = String(detail).split("·");
+      return parts.map(function (raw) {
+        var item = raw.trim();
+        // match a leading quantity token: numbers, fractions, units, "poignée", etc.
+        var m = item.match(/^([0-9¼½¾.,]+\s*(?:tr\.|g|cl|c\.à\.s|c\.à\.c|main(?:s)?(?:\screuse)?|pot|bocal|boîte|paume(?:s)?|poing(?:s)?|pouce(?:s)?)?|poignée|filet|½|¼)\b\s*/i);
+        var safe = item.replace(/[&<>"]/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+        });
+        if (m && m[0].trim()) {
+          var qtyLen = m[0].trim().length;
+          // re-escape against the trimmed original to keep indices aligned
+          var qty = item.slice(0, qtyLen);
+          var rest = item.slice(qtyLen);
+          var esc = function (s) { return s.replace(/[&<>"]/g, function (c) {
+            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+          return '<span class="qty">' + esc(qty) + "</span>" + esc(rest);
+        }
+        return safe;
+      }).join('<span class="sep">·</span>');
+    }
+
+    function escape(s) {
+      return String(s).replace(/[&<>"]/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+      });
+    }
+
+    function showEmpty(msg) {
+      listEl.innerHTML = '<li class="empty">' + escape(msg) + "</li>";
+    }
+
+    function render(data) {
+      if (!data || !Array.isArray(data.repas) || data.repas.length === 0) {
+        weekEl.textContent = "";
+        showEmpty("Menu pas encore publié.");
+        return;
+      }
+      weekEl.textContent = data.semaine || "";
+      majEl.textContent  = data.maj ? "Mis à jour le " + data.maj : "";
+
+      var html = data.repas.map(function (m, i) {
+        var delay = (0.06 * i + 0.05).toFixed(2);
+        return (
+          '<li class="meal" style="animation-delay:' + delay + 's">' +
+            '<div class="meal__head">' +
+              '<span class="meal__day">' + escape(m.jour || "") + "</span>" +
+              (m.type ? '<span class="meal__type">' + escape(m.type) + "</span>" : "") +
+            "</div>" +
+            '<div class="meal__plat">' + escape(m.plat || "") + "</div>" +
+            (m.detail ? '<div class="meal__detail">' + formatDetail(m.detail) + "</div>" : "") +
+          "</li>"
+        );
+      }).join("");
+      listEl.innerHTML = html;
+    }
+
+    fetch("menu.json", { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("http " + r.status);
+        return r.json();
+      })
+      .then(render)
+      .catch(function () {
+        weekEl.textContent = "";
+        showEmpty("Menu pas encore publié.");
+      });
+  })();
+</script>
+</body>
+</html>

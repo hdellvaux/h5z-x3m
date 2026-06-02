@@ -1,0 +1,54 @@
+{
+  "semaine": "Semaine du 1ᵉʳ juin 2026",
+  "maj": "2026-06-01",
+  "repas": [
+    {
+      "jour": "Samedi",
+      "type": "Déj",
+      "plat": "Bowl poulet-quinoa",
+      "detail": "150g poulet poêlé · 1 main creuse quinoa · 2 poings roquette · tomates cerises · ½ avocat · filet d'huile d'olive · 1 pomme"
+    },
+    {
+      "jour": "Dimanche",
+      "type": "Déj",
+      "plat": "Omelette gourmande",
+      "detail": "omelette 3 œufs · 2 poings épinards · 30g feta · salade verte · 2 tr. pain complet · 1 fruit"
+    },
+    {
+      "jour": "Lundi",
+      "type": "Dîner",
+      "plat": "Tartines musclées",
+      "detail": "2 tr. pain seigle · ½ avocat · 3 œufs durs · 100g saumon fumé · poignée roquette"
+    },
+    {
+      "jour": "Mardi",
+      "type": "Dîner",
+      "plat": "Bowl méditerranéen",
+      "detail": "½ bocal lentilles · 1 boîte maquereaux · tomates cerises · ½ avocat · filet d'huile d'olive · citron"
+    },
+    {
+      "jour": "Mercredi",
+      "type": "Dîner",
+      "plat": "Assiette mezze",
+      "detail": "houmous · ½ bocal pois chiches · concombre · olives Kalamata · tomates cerises · 2 tr. pain complet"
+    },
+    {
+      "jour": "Jeudi",
+      "type": "Dîner",
+      "plat": "Assiette nordique",
+      "detail": "100g saumon fumé · 3 œufs durs · concombre · ½ avocat · 2 tr. pain seigle · citron"
+    },
+    {
+      "jour": "Vendredi",
+      "type": "Dîner",
+      "plat": "Petit-déj du soir",
+      "detail": "1 pot skyr 250g · 1 poing myrtilles · 30g amandes · 1 c.à.s flocons d'avoine · filet de miel"
+    },
+    {
+      "jour": "Samedi",
+      "type": "Post-soirée",
+      "plat": "Brunch de récupération",
+      "detail": "3 œufs brouillés · 2 tr. bacon · ½ avocat · 2 tr. pain complet grillé · tomates cerises · 1 fruit"
+    }
+  ]
+}
