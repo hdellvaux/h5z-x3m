@@ -147,13 +147,29 @@
     letter-spacing: -0.005em;
   }
 
-  .meal__detail {
+  .meal__items {
+    list-style: none;
+    display: grid;
+    gap: 0.34rem;
+    margin-top: 0.15rem;
+  }
+  .meal__item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
     font-size: 0.96rem;
     color: var(--ink-soft);
-    line-height: 1.65;
+    line-height: 1.4;
   }
-  .meal__detail .sep { color: var(--accent-dim); padding: 0 0.12em; }
-  .meal__detail .qty { color: var(--ink); font-weight: 600; }
+  .meal__item .pill {
+    flex: none;
+    width: 1.4em;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1;
+  }
+  .meal__item .pill--extra { color: var(--accent-dim); font-size: 1.1rem; }
+  .meal__item .qty { color: var(--ink); font-weight: 600; }
 
   /* ---------- portions footer ---------- */
   .portions {
@@ -254,34 +270,48 @@
     var majEl   = document.getElementById("maj");
     var listEl  = document.getElementById("meals");
 
-    // Highlight leading quantities in a detail line so portions stand out.
-    // e.g. "2 tr. pain seigle" -> the "2 tr." is wrapped as .qty
-    function formatDetail(detail) {
-      var parts = String(detail).split("·");
-      return parts.map(function (raw) {
-        var item = raw.trim();
-        // match a leading quantity token: numbers, fractions, units, "poignée", etc.
-        var m = item.match(/^([0-9¼½¾.,]+\s*(?:tr\.|g|cl|c\.à\.s|c\.à\.c|main(?:s)?(?:\screuse)?|pot|bocal|boîte|paume(?:s)?|poing(?:s)?|pouce(?:s)?)?|poignée|filet|½|¼)\b\s*/i);
-        var safe = item.replace(/[&<>"]/g, function (c) {
-          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
-        });
-        if (m && m[0].trim()) {
-          var qtyLen = m[0].trim().length;
-          // re-escape against the trimmed original to keep indices aligned
-          var qty = item.slice(0, qtyLen);
-          var rest = item.slice(qtyLen);
-          var esc = function (s) { return s.replace(/[&<>"]/g, function (c) {
-            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-          return '<span class="qty">' + esc(qty) + "</span>" + esc(rest);
-        }
-        return safe;
-      }).join('<span class="sep">·</span>');
-    }
+    // Pillar -> emoji. Anything not in this map (citron, miel, huile…) is an
+    // "extra" and gets a muted neutral dot.
+    var PILIERS = {
+      proteine: "🥩",
+      glucide:  "🌾",
+      gras:     "🥑",
+      legume:   "🥬",
+      fruit:    "🍓"
+    };
 
     function escape(s) {
       return String(s).replace(/[&<>"]/g, function (c) {
         return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
       });
+    }
+
+    // Wrap a leading quantity token in <span class="qty"> so portions stand
+    // out. e.g. "2 tr. pain seigle" -> "2 tr." bolded. Returns escaped HTML.
+    function boldQty(text) {
+      var item = String(text).trim();
+      var m = item.match(/^([0-9¼½¾.,]+\s*(?:tr\.|g|cl|c\.à\.s|c\.à\.c|main(?:s)?(?:\screuse)?|pot|bocal|boîte|paume(?:s)?|poing(?:s)?|pouce(?:s)?)?|poignée|filet|½|¼)\b\s*/i);
+      if (m && m[0].trim()) {
+        var qtyLen = m[0].trim().length;
+        return '<span class="qty">' + escape(item.slice(0, qtyLen)) + "</span>" + escape(item.slice(qtyLen));
+      }
+      return escape(item);
+    }
+
+    // Render a meal's ingredients as a bulleted list, each tagged with its
+    // pillar emoji.
+    function renderItems(items) {
+      return '<ul class="meal__items">' + items.map(function (it) {
+        var emoji = PILIERS[it.pilier];
+        var cls   = emoji ? "pill" : "pill pill--extra";
+        var glyph = emoji || "·";
+        return (
+          '<li class="meal__item">' +
+            '<span class="' + cls + '" aria-hidden="true">' + glyph + "</span>" +
+            "<span>" + boldQty(it.texte || "") + "</span>" +
+          "</li>"
+        );
+      }).join("") + "</ul>";
     }
 
     function showEmpty(msg) {
@@ -306,7 +336,13 @@
               (m.type ? '<span class="meal__type">' + escape(m.type) + "</span>" : "") +
             "</div>" +
             '<div class="meal__plat">' + escape(m.plat || "") + "</div>" +
-            (m.detail ? '<div class="meal__detail">' + formatDetail(m.detail) + "</div>" : "") +
+            (Array.isArray(m.items) && m.items.length
+              ? renderItems(m.items)
+              : (m.detail
+                  ? renderItems(String(m.detail).split("·").map(function (t) {
+                      return { pilier: "extra", texte: t.trim() };
+                    }))
+                  : "")) +
           "</li>"
         );
       }).join("");
