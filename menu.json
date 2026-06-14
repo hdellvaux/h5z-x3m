@@ -1,13 +1,13 @@
 {
-  "semaine": "Semaine du 1ᵉʳ juin 2026",
-  "maj": "2026-06-01",
+  "semaine": "Semaine du 27 juin 2026",
+  "maj": "2026-06-14",
   "repas": [
     {
       "jour": "Samedi",
       "type": "Déj",
-      "plat": "Bowl poulet-quinoa",
+      "plat": "Bowl bœuf-quinoa",
       "items": [
-        { "pilier": "proteine", "nom": "poulet poêlé", "qte": "150g" },
+        { "pilier": "proteine", "nom": "bœuf haché poêlé", "qte": "150g" },
         { "pilier": "glucide", "nom": "quinoa", "qte": "1 main creuse" },
         { "pilier": "legume", "nom": "roquette", "qte": "2 poings" },
         { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
@@ -19,26 +19,27 @@
     {
       "jour": "Dimanche",
       "type": "Déj",
-      "plat": "Omelette gourmande",
+      "plat": "Saumon-patate douce",
       "items": [
-        { "pilier": "proteine", "nom": "omelette", "qte": "3 œufs" },
-        { "pilier": "legume", "nom": "épinards", "qte": "2 poings" },
-        { "pilier": "gras", "nom": "feta", "qte": "30g" },
-        { "pilier": "legume", "nom": "salade verte", "qte": "" },
-        { "pilier": "glucide", "nom": "pain complet", "qte": "2 tr." },
-        { "pilier": "fruit", "nom": "fruit", "qte": "1" }
+        { "pilier": "proteine", "nom": "pavé de saumon", "qte": "130g" },
+        { "pilier": "glucide", "nom": "patate douce", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "brocolis", "qte": "2 poings" },
+        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "fruit", "nom": "fruits rouges", "qte": "1 poing" }
       ]
     },
     {
       "jour": "Lundi",
       "type": "Dîner",
-      "plat": "Tartines musclées",
+      "plat": "Bowl méditerranéen",
       "items": [
-        { "pilier": "glucide", "nom": "pain seigle", "qte": "2 tr." },
+        { "pilier": "proteine", "nom": "sardines à l'huile d'olive", "qte": "1 boîte" },
+        { "pilier": "glucide", "nom": "lentilles", "qte": "½ bocal" },
+        { "pilier": "legume", "nom": "tomates cerises", "qte": "2 poings" },
         { "pilier": "gras", "nom": "avocat", "qte": "½" },
-        { "pilier": "proteine", "nom": "œufs durs", "qte": "3" },
-        { "pilier": "proteine", "nom": "saumon fumé", "qte": "100g" },
-        { "pilier": "legume", "nom": "roquette", "qte": "poignée" }
+        { "pilier": "gras", "nom": "olives Kalamata", "qte": "" },
+        { "pilier": "extra", "nom": "citron", "qte": "" },
+        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
       ]
     },
     {
@@ -46,63 +47,59 @@
       "type": "Dîner",
       "plat": "Bowl méditerranéen",
       "items": [
+        { "pilier": "proteine", "nom": "sardines à l'huile d'olive", "qte": "1 boîte" },
         { "pilier": "glucide", "nom": "lentilles", "qte": "½ bocal" },
-        { "pilier": "proteine", "nom": "maquereaux", "qte": "1 boîte" },
-        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
+        { "pilier": "legume", "nom": "tomates cerises", "qte": "2 poings" },
         { "pilier": "gras", "nom": "avocat", "qte": "½" },
-        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
-        { "pilier": "extra", "nom": "citron", "qte": "" }
+        { "pilier": "gras", "nom": "olives Kalamata", "qte": "" },
+        { "pilier": "extra", "nom": "citron", "qte": "" },
+        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
       ]
     },
     {
       "jour": "Mercredi",
       "type": "Dîner",
-      "plat": "Assiette mezze",
+      "plat": "Bowl tofu-sésame",
       "items": [
-        { "pilier": "proteine", "nom": "houmous", "qte": "" },
-        { "pilier": "glucide", "nom": "pois chiches", "qte": "½ bocal" },
+        { "pilier": "proteine", "nom": "tofu", "qte": "150g" },
+        { "pilier": "proteine", "nom": "œufs durs", "qte": "2" },
+        { "pilier": "glucide", "nom": "riz basmati", "qte": "1 sachet" },
         { "pilier": "legume", "nom": "concombre", "qte": "" },
-        { "pilier": "gras", "nom": "olives Kalamata", "qte": "" },
         { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
-        { "pilier": "glucide", "nom": "pain complet", "qte": "2 tr." }
+        { "pilier": "legume", "nom": "roquette", "qte": "" },
+        { "pilier": "gras", "nom": "avocat", "qte": "½" },
+        { "pilier": "gras", "nom": "graines de sésame", "qte": "" },
+        { "pilier": "extra", "nom": "sauce soja", "qte": "" },
+        { "pilier": "fruit", "nom": "mangue", "qte": "1" }
       ]
     },
     {
       "jour": "Jeudi",
       "type": "Dîner",
-      "plat": "Assiette nordique",
+      "plat": "Bowl tofu-sésame",
       "items": [
-        { "pilier": "proteine", "nom": "saumon fumé", "qte": "100g" },
-        { "pilier": "proteine", "nom": "œufs durs", "qte": "3" },
+        { "pilier": "proteine", "nom": "tofu", "qte": "150g" },
+        { "pilier": "proteine", "nom": "œufs durs", "qte": "2" },
+        { "pilier": "glucide", "nom": "riz basmati", "qte": "1 sachet" },
         { "pilier": "legume", "nom": "concombre", "qte": "" },
+        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
+        { "pilier": "legume", "nom": "roquette", "qte": "" },
         { "pilier": "gras", "nom": "avocat", "qte": "½" },
-        { "pilier": "glucide", "nom": "pain seigle", "qte": "2 tr." },
-        { "pilier": "extra", "nom": "citron", "qte": "" }
+        { "pilier": "gras", "nom": "graines de sésame", "qte": "" },
+        { "pilier": "extra", "nom": "sauce soja", "qte": "" },
+        { "pilier": "fruit", "nom": "banane (bureau)", "qte": "1" }
       ]
     },
     {
       "jour": "Vendredi",
       "type": "Dîner",
-      "plat": "Petit-déj du soir",
+      "plat": "Petit-déj du soir (léger)",
       "items": [
-        { "pilier": "proteine", "nom": "skyr", "qte": "1 pot 250g" },
+        { "pilier": "proteine", "nom": "skyr", "qte": "250g" },
         { "pilier": "fruit", "nom": "myrtilles", "qte": "1 poing" },
         { "pilier": "gras", "nom": "amandes", "qte": "30g" },
-        { "pilier": "glucide", "nom": "flocons d'avoine", "qte": "1 c.à.s" },
-        { "pilier": "extra", "nom": "miel", "qte": "filet" }
-      ]
-    },
-    {
-      "jour": "Samedi",
-      "type": "Post-soirée",
-      "plat": "Brunch de récupération",
-      "items": [
-        { "pilier": "proteine", "nom": "œufs brouillés", "qte": "3" },
-        { "pilier": "proteine", "nom": "bacon", "qte": "2 tr." },
-        { "pilier": "gras", "nom": "avocat", "qte": "½" },
-        { "pilier": "glucide", "nom": "pain complet grillé", "qte": "2 tr." },
-        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
-        { "pilier": "fruit", "nom": "fruit", "qte": "1" }
+        { "pilier": "glucide", "nom": "flocons d'avoine", "qte": "2 c.à.s" },
+        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
       ]
     }
   ]
