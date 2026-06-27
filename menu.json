@@ -13,7 +13,18 @@
         { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
         { "pilier": "gras", "nom": "avocat", "qte": "½" },
         { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "extra", "nom": "oignon", "qte": "1" },
+        { "pilier": "extra", "nom": "sauce soja", "qte": "1 c.à.s" },
+        { "pilier": "extra", "nom": "huile de sésame", "qte": "1 c.à.c" },
+        { "pilier": "extra", "nom": "graines de sésame", "qte": "" },
         { "pilier": "fruit", "nom": "pomme", "qte": "1" }
+      ],
+      "recette": [
+        { "etape": "Marinade", "detail": "Mélange bœuf cru + 1 c.à.s soy sauce + 1 c.à.c huile de sésame + 1 c.à.c marinade asiatique. Enrobe bien, laisse reposer 10 min." },
+        { "etape": "Oignons", "detail": "Poêle feu moyen, filet d'huile. 1 oignon émincé, 7-10 min en remuant toutes les 2-3 min. Objectif : translucide et légèrement doré." },
+        { "etape": "Saisie", "detail": "Monte à feu vif. Étale le bœuf en galette sur les oignons, ne touche pas 1-2 min. Soulève un coin : si doré, émiette et retourne. Continue jusqu'à plus de rose." },
+        { "etape": "Laque", "detail": "Giclée de soy (1 c.à.s) + graines de sésame. 30 sec feu vif, feu off — pas plus, sinon ça brûle." },
+        { "etape": "Bowl", "detail": "Quinoa micro-ondes 2 min. Assemble : quinoa + bœuf chaud + roquette + tomates cerises + avocat (½). Filet d'huile d'olive + jus ½ citron + sel + poivre. Assaisonne au dernier moment." }
       ]
     },
     {
