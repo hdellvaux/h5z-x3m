@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "pilier": "proteine",
+      "emoji": "🥩",
+      "label": "Protéines",
+      "items": [
+        { "nom": "Saumon", "qte": "130g" },
+        { "nom": "Bœuf haché", "qte": "150g" },
+        { "nom": "Tofu", "qte": "150g" },
+        { "nom": "Sardines", "qte": "1 boîte" },
+        { "nom": "Œufs", "qte": "2–3" },
+        { "nom": "Skyr", "qte": "250g" }
+      ]
+    },
+    {
+      "pilier": "glucide",
+      "emoji": "🌾",
+      "label": "Glucides",
+      "items": [
+        { "nom": "Quinoa", "qte": "1 main creuse" },
+        { "nom": "Patate douce", "qte": "1 main creuse" },
+        { "nom": "Lentilles", "qte": "½ bocal" },
+        { "nom": "Flocons d'avoine", "qte": "2 c.à.s" },
+        { "nom": "Riz basmati", "qte": "1 sachet" }
+      ]
+    },
+    {
+      "pilier": "gras",
+      "emoji": "🥑",
+      "label": "Gras",
+      "items": [
+        { "nom": "Avocat", "qte": "½" },
+        { "nom": "Amandes", "qte": "30g" },
+        { "nom": "Olives Kalamata", "qte": "" },
+        { "nom": "Graines de sésame", "qte": "" }
+      ]
+    },
+    {
+      "pilier": "legume",
+      "emoji": "🥬",
+      "label": "Légumes",
+      "items": [
+        { "nom": "Brocolis", "qte": "2 poings" },
+        { "nom": "Haricots verts", "qte": "2 poings" },
+        { "nom": "Roquette", "qte": "2 poings" },
+        { "nom": "Tomates cerises", "qte": "" },
+        { "nom": "Concombre", "qte": "" }
+      ]
+    },
+    {
+      "pilier": "fruit",
+      "emoji": "🍓",
+      "label": "Fruits",
+      "items": [
+        { "nom": "Mangue", "qte": "1" },
+        { "nom": "Pomme", "qte": "1" },
+        { "nom": "Myrtilles", "qte": "1 poing" },
+        { "nom": "Fruits rouges", "qte": "1 poing" },
+        { "nom": "Banane", "qte": "1" }
+      ]
+    },
+    {
+      "pilier": "relever",
+      "emoji": "🧂",
+      "label": "Relever",
+      "items": [
+        { "nom": "Ail", "qte": "1 gousse" },
+        { "nom": "Oignon", "qte": "½" },
+        { "nom": "Huile d'olive", "qte": "filet" },
+        { "nom": "Sauce soja", "qte": "1 c.à.s" },
+        { "nom": "Huile de sésame", "qte": "1 c.à.c" },
+        { "nom": "Citron", "qte": "" }
+      ]
+    }
+  ]
+}

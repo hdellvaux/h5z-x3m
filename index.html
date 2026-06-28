@@ -216,6 +216,109 @@
     color: var(--accent-dim);
   }
 
+  /* ---------- tabs ---------- */
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: clamp(1.4rem, 5vw, 2.2rem);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0;
+  }
+  .tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    padding: 0.45em 0.1em;
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    margin-right: 1.4rem;
+  }
+  .tab-btn:hover { color: var(--ink); }
+  .tab-btn[aria-selected="true"] {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* ---------- ingredients grid ---------- */
+  .ing-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .ing-col {
+    border-right: 1px solid var(--line);
+    min-width: 0;
+  }
+  .ing-col:last-child { border-right: none; }
+
+  .ing-col__head {
+    padding: 0.7rem 0.75rem 0.6rem;
+    background: var(--card);
+    border-bottom: 1px solid var(--line);
+    text-align: center;
+  }
+  .ing-col__emoji { font-size: 1.3rem; display: block; margin-bottom: 0.2rem; }
+  .ing-col__label {
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .ing-col__items { list-style: none; padding: 0.5rem 0; }
+  .ing-item {
+    padding: 0.45rem 0.75rem;
+    border-bottom: 1px solid var(--line);
+    line-height: 1.35;
+  }
+  .ing-item:last-child { border-bottom: none; }
+  .ing-item__nom {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--ink);
+    display: block;
+  }
+  .ing-item__qte {
+    font-size: 0.76rem;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  /* mobile: stack as accordions */
+  @media (max-width: 640px) {
+    .ing-grid {
+      display: flex;
+      flex-direction: column;
+      border-radius: 14px;
+    }
+    .ing-col { border-right: none; border-bottom: 1px solid var(--line); }
+    .ing-col:last-child { border-bottom: none; }
+    .ing-col__head {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-align: left;
+      cursor: pointer;
+      user-select: none;
+    }
+    .ing-col__emoji { display: inline; margin-bottom: 0; font-size: 1.1rem; }
+    .ing-col__label { font-size: 0.68rem; }
+    .ing-col__items { display: none; }
+    .ing-col.open .ing-col__items { display: block; }
+  }
+
   /* ---------- recipe accordion ---------- */
   .recipe-btn {
     margin-top: 0.75rem;
@@ -301,9 +404,15 @@
       <div class="rule"></div>
     </header>
 
-    <ul class="meals" id="meals"></ul>
+    <nav class="tabs" role="tablist">
+      <button class="tab-btn" role="tab" aria-selected="true"  data-tab="menu">Menu</button>
+      <button class="tab-btn" role="tab" aria-selected="false" data-tab="ingredients">Ingrédients</button>
+    </nav>
 
-    <section class="portions" aria-label="Rappel des portions">
+    <div id="panel-menu">
+      <ul class="meals" id="meals"></ul>
+
+      <section class="portions" aria-label="Rappel des portions">
       <h2>Rappel des portions</h2>
       <div class="sub">La main comme balance</div>
       <dl>
@@ -315,7 +424,12 @@
       </dl>
     </section>
 
-    <footer class="note">Picnic · validé à la main dans l'app</footer>
+      <footer class="note">Picnic · validé à la main dans l'app</footer>
+    </div>
+
+    <div id="panel-ingredients" hidden>
+      <div class="ing-grid" id="ing-grid"></div>
+    </div>
   </main>
 
 <script>
@@ -434,6 +548,55 @@
       }).join("");
       listEl.innerHTML = html;
     }
+
+    // Tab switching
+    var tabs   = document.querySelectorAll(".tab-btn");
+    var panels = { menu: document.getElementById("panel-menu"), ingredients: document.getElementById("panel-ingredients") };
+    tabs.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        tabs.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
+        btn.setAttribute("aria-selected", "true");
+        Object.keys(panels).forEach(function (k) { panels[k].hidden = true; });
+        panels[btn.dataset.tab].hidden = false;
+      });
+    });
+
+    // Ingredients grid
+    function renderIngredients(data) {
+      var grid = document.getElementById("ing-grid");
+      if (!data || !Array.isArray(data.categories)) return;
+      grid.innerHTML = data.categories.map(function (cat) {
+        var items = cat.items.map(function (it) {
+          return (
+            '<li class="ing-item">' +
+              '<span class="ing-item__nom">' + escape(it.nom) + "</span>" +
+              (it.qte ? '<span class="ing-item__qte">' + escape(it.qte) + "</span>" : "") +
+            "</li>"
+          );
+        }).join("");
+        return (
+          '<div class="ing-col">' +
+            '<div class="ing-col__head">' +
+              '<span class="ing-col__emoji">' + cat.emoji + "</span>" +
+              '<span class="ing-col__label">' + escape(cat.label) + "</span>" +
+            "</div>" +
+            '<ul class="ing-col__items">' + items + "</ul>" +
+          "</div>"
+        );
+      }).join("");
+
+      // mobile accordion toggle
+      grid.querySelectorAll(".ing-col__head").forEach(function (head) {
+        head.addEventListener("click", function () {
+          head.closest(".ing-col").classList.toggle("open");
+        });
+      });
+    }
+
+    fetch("ingredients.json", { cache: "no-store" })
+      .then(function (r) { return r.json(); })
+      .then(renderIngredients)
+      .catch(function () {});
 
     fetch("menu.json", { cache: "no-store" })
       .then(function (r) {
