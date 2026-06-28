@@ -1,6 +1,6 @@
 {
   "semaine": "Semaine du 27 juin 2026",
-  "maj": "2026-06-14",
+  "maj": "2026-06-28",
   "repas": [
     {
       "jour": "Samedi",
@@ -18,53 +18,42 @@
         { "pilier": "extra", "nom": "huile de sésame", "qte": "1 c.à.c" },
         { "pilier": "extra", "nom": "graines de sésame", "qte": "" },
         { "pilier": "fruit", "nom": "pomme", "qte": "1" }
-      ],
-      "recette": [
-        { "etape": "Marinade", "detail": "Mélange bœuf cru + 1 c.à.s soy sauce + 1 c.à.c huile de sésame + 1 c.à.c marinade asiatique. Enrobe bien, laisse reposer 10 min." },
-        { "etape": "Oignons", "detail": "Poêle feu moyen, filet d'huile. 1 oignon émincé, 7-10 min en remuant toutes les 2-3 min. Objectif : translucide et légèrement doré." },
-        { "etape": "Saisie", "detail": "Monte à feu vif. Étale le bœuf en galette sur les oignons, ne touche pas 1-2 min. Soulève un coin : si doré, émiette et retourne. Continue jusqu'à plus de rose." },
-        { "etape": "Laque", "detail": "Giclée de soy (1 c.à.s) + graines de sésame. 30 sec feu vif, feu off — pas plus, sinon ça brûle." },
-        { "etape": "Bowl", "detail": "Quinoa micro-ondes 2 min. Assemble : quinoa + bœuf chaud + roquette + tomates cerises + avocat (½). Filet d'huile d'olive + jus ½ citron + sel + poivre. Assaisonne au dernier moment." }
       ]
     },
     {
       "jour": "Dimanche",
-      "type": "Déj",
-      "plat": "Saumon-patate douce",
+      "type": "Dîner",
+      "plat": "Omelette + brocolis",
       "items": [
-        { "pilier": "proteine", "nom": "pavé de saumon", "qte": "130g" },
-        { "pilier": "glucide", "nom": "patate douce", "qte": "1 main creuse" },
-        { "pilier": "legume", "nom": "brocolis", "qte": "2 poings" },
-        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
-        { "pilier": "fruit", "nom": "fruits rouges", "qte": "1 poing" }
+        { "pilier": "proteine", "nom": "œufs", "qte": "3" },
+        { "pilier": "legume", "nom": "brocolis surgelés", "qte": "2 poings" },
+        { "pilier": "gras", "nom": "avocat", "qte": "½" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
+        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
       ]
     },
     {
       "jour": "Lundi",
       "type": "Dîner",
-      "plat": "Bowl méditerranéen",
+      "plat": "Saumon-patate douce",
       "items": [
-        { "pilier": "proteine", "nom": "sardines à l'huile d'olive", "qte": "1 boîte" },
-        { "pilier": "glucide", "nom": "lentilles", "qte": "½ bocal" },
-        { "pilier": "legume", "nom": "tomates cerises", "qte": "2 poings" },
-        { "pilier": "gras", "nom": "avocat", "qte": "½" },
-        { "pilier": "gras", "nom": "olives Kalamata", "qte": "" },
-        { "pilier": "extra", "nom": "citron", "qte": "" },
-        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
+        { "pilier": "proteine", "nom": "pavé de saumon", "qte": "130g" },
+        { "pilier": "glucide", "nom": "patate douce", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "brocolis surgelés", "qte": "2 poings" },
+        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" }
       ]
     },
     {
       "jour": "Mardi",
       "type": "Dîner",
-      "plat": "Bowl méditerranéen",
+      "plat": "Saumon-patate douce",
       "items": [
-        { "pilier": "proteine", "nom": "sardines à l'huile d'olive", "qte": "1 boîte" },
-        { "pilier": "glucide", "nom": "lentilles", "qte": "½ bocal" },
-        { "pilier": "legume", "nom": "tomates cerises", "qte": "2 poings" },
-        { "pilier": "gras", "nom": "avocat", "qte": "½" },
-        { "pilier": "gras", "nom": "olives Kalamata", "qte": "" },
-        { "pilier": "extra", "nom": "citron", "qte": "" },
-        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
+        { "pilier": "proteine", "nom": "pavé de saumon", "qte": "130g" },
+        { "pilier": "glucide", "nom": "patate douce", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "brocolis surgelés", "qte": "2 poings" },
+        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" }
       ]
     },
     {
@@ -72,14 +61,13 @@
       "type": "Dîner",
       "plat": "Bowl tofu-sésame",
       "items": [
-        { "pilier": "proteine", "nom": "tofu", "qte": "150g" },
-        { "pilier": "proteine", "nom": "œufs durs", "qte": "2" },
-        { "pilier": "glucide", "nom": "riz basmati", "qte": "1 sachet" },
-        { "pilier": "legume", "nom": "concombre", "qte": "" },
-        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
-        { "pilier": "legume", "nom": "roquette", "qte": "" },
+        { "pilier": "proteine", "nom": "tofu poêlé", "qte": "150g" },
+        { "pilier": "proteine", "nom": "œufs", "qte": "2" },
+        { "pilier": "legume", "nom": "haricots surgelés", "qte": "2 poings" },
         { "pilier": "gras", "nom": "avocat", "qte": "½" },
         { "pilier": "gras", "nom": "graines de sésame", "qte": "" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
+        { "pilier": "extra", "nom": "oignon", "qte": "½" },
         { "pilier": "extra", "nom": "sauce soja", "qte": "" },
         { "pilier": "fruit", "nom": "mangue", "qte": "1" }
       ]
@@ -89,16 +77,15 @@
       "type": "Dîner",
       "plat": "Bowl tofu-sésame",
       "items": [
-        { "pilier": "proteine", "nom": "tofu", "qte": "150g" },
-        { "pilier": "proteine", "nom": "œufs durs", "qte": "2" },
-        { "pilier": "glucide", "nom": "riz basmati", "qte": "1 sachet" },
-        { "pilier": "legume", "nom": "concombre", "qte": "" },
-        { "pilier": "legume", "nom": "tomates cerises", "qte": "" },
-        { "pilier": "legume", "nom": "roquette", "qte": "" },
+        { "pilier": "proteine", "nom": "tofu poêlé", "qte": "150g" },
+        { "pilier": "proteine", "nom": "œufs", "qte": "2" },
+        { "pilier": "legume", "nom": "haricots surgelés", "qte": "2 poings" },
         { "pilier": "gras", "nom": "avocat", "qte": "½" },
         { "pilier": "gras", "nom": "graines de sésame", "qte": "" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
+        { "pilier": "extra", "nom": "oignon", "qte": "½" },
         { "pilier": "extra", "nom": "sauce soja", "qte": "" },
-        { "pilier": "fruit", "nom": "banane (bureau)", "qte": "1" }
+        { "pilier": "fruit", "nom": "mangue", "qte": "1" }
       ]
     },
     {
