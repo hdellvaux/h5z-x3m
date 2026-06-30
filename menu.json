@@ -1,9 +1,9 @@
 {
-  "semaine": "Semaine du 27 juin 2026",
-  "maj": "2026-06-28",
+  "semaine": "Semaines du 27 juin – 11 juillet 2026",
+  "maj": "2026-06-30",
   "repas": [
     {
-      "jour": "Samedi",
+      "jour": "Samedi 28 jun",
       "type": "Déj",
       "plat": "Bowl bœuf-quinoa",
       "items": [
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "jour": "Dimanche",
+      "jour": "Dimanche 29 jun",
       "type": "Dîner",
       "plat": "Omelette + brocolis",
       "items": [
@@ -33,9 +33,9 @@
       ]
     },
     {
-      "jour": "Lundi",
+      "jour": "Lundi 30 jun",
       "type": "Dîner",
-      "plat": "Saumon-patate douce",
+      "plat": "Saumon · patate douce · brocolis",
       "items": [
         { "pilier": "proteine", "nom": "pavé de saumon", "qte": "130g" },
         { "pilier": "glucide", "nom": "patate douce", "qte": "1 main creuse" },
@@ -45,9 +45,9 @@
       ]
     },
     {
-      "jour": "Mardi",
+      "jour": "Mardi 1 jul",
       "type": "Dîner",
-      "plat": "Saumon-patate douce",
+      "plat": "Saumon · patate douce · brocolis",
       "items": [
         { "pilier": "proteine", "nom": "pavé de saumon", "qte": "130g" },
         { "pilier": "glucide", "nom": "patate douce", "qte": "1 main creuse" },
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "jour": "Mercredi",
+      "jour": "Mercredi 2 jul",
       "type": "Dîner",
       "plat": "Bowl tofu-sésame",
       "items": [
@@ -68,12 +68,11 @@
         { "pilier": "gras", "nom": "graines de sésame", "qte": "" },
         { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
         { "pilier": "extra", "nom": "oignon", "qte": "½" },
-        { "pilier": "extra", "nom": "sauce soja", "qte": "" },
-        { "pilier": "fruit", "nom": "mangue", "qte": "1" }
+        { "pilier": "extra", "nom": "sauce soja", "qte": "" }
       ]
     },
     {
-      "jour": "Jeudi",
+      "jour": "Jeudi 3 jul",
       "type": "Dîner",
       "plat": "Bowl tofu-sésame",
       "items": [
@@ -84,20 +83,83 @@
         { "pilier": "gras", "nom": "graines de sésame", "qte": "" },
         { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
         { "pilier": "extra", "nom": "oignon", "qte": "½" },
-        { "pilier": "extra", "nom": "sauce soja", "qte": "" },
-        { "pilier": "fruit", "nom": "mangue", "qte": "1" }
+        { "pilier": "extra", "nom": "sauce soja", "qte": "" }
       ]
     },
     {
-      "jour": "Vendredi",
+      "jour": "Vendredi 4 jul",
       "type": "Dîner",
-      "plat": "Petit-déj du soir (léger)",
+      "plat": "Zalm · patate douce · brocoli",
       "items": [
-        { "pilier": "proteine", "nom": "skyr", "qte": "250g" },
-        { "pilier": "fruit", "nom": "myrtilles", "qte": "1 poing" },
-        { "pilier": "gras", "nom": "amandes", "qte": "30g" },
-        { "pilier": "glucide", "nom": "flocons d'avoine", "qte": "2 c.à.s" },
-        { "pilier": "fruit", "nom": "pomme", "qte": "1" }
+        { "pilier": "proteine", "nom": "pavé saumon sauvage", "qte": "130g" },
+        { "pilier": "glucide", "nom": "patate douce en blokjes", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "broccoliroosjes surgelés", "qte": "2 poings" },
+        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
+        { "pilier": "extra", "nom": "basilicum", "qte": "pincée" }
+      ]
+    },
+    {
+      "jour": "Lundi 7 jul",
+      "type": "Dîner",
+      "plat": "Zalm · patate douce · brocoli",
+      "items": [
+        { "pilier": "proteine", "nom": "pavé saumon sauvage", "qte": "130g" },
+        { "pilier": "glucide", "nom": "patate douce en blokjes", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "broccoliroosjes surgelés", "qte": "2 poings" },
+        { "pilier": "gras", "nom": "huile d'olive", "qte": "filet" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
+        { "pilier": "extra", "nom": "basilicum", "qte": "pincée" }
+      ]
+    },
+    {
+      "jour": "Mardi 8 jul",
+      "type": "Dîner",
+      "plat": "Kaasschnitzel · roerbakmix Italiaans · pita",
+      "items": [
+        { "pilier": "proteine", "nom": "schnitzel végé", "qte": "2 stuks" },
+        { "pilier": "legume", "nom": "roerbakmix Italiaans", "qte": "2 poings" },
+        { "pilier": "glucide", "nom": "pita", "qte": "1–2 stuks" },
+        { "pilier": "extra", "nom": "échalote", "qte": "1" },
+        { "pilier": "extra", "nom": "oregano", "qte": "pincée" }
+      ]
+    },
+    {
+      "jour": "Mercredi 9 jul",
+      "type": "Dîner",
+      "plat": "Kaasschnitzel · roerbakmix Italiaans · pita",
+      "items": [
+        { "pilier": "proteine", "nom": "schnitzel végé", "qte": "2 stuks" },
+        { "pilier": "legume", "nom": "roerbakmix Italiaans", "qte": "2 poings" },
+        { "pilier": "glucide", "nom": "pita", "qte": "1–2 stuks" },
+        { "pilier": "extra", "nom": "échalote", "qte": "1" },
+        { "pilier": "extra", "nom": "oregano", "qte": "pincée" }
+      ]
+    },
+    {
+      "jour": "Jeudi 10 jul",
+      "type": "Dîner",
+      "plat": "Balletjes végé · riz · petits pois",
+      "items": [
+        { "pilier": "proteine", "nom": "balletjes végé", "qte": "100g" },
+        { "pilier": "glucide", "nom": "riz basmati", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "petits pois (bocal)", "qte": "2 poings" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
+        { "pilier": "extra", "nom": "échalote", "qte": "1" },
+        { "pilier": "extra", "nom": "sauce soja", "qte": "1 c.à.s" }
+      ]
+    },
+    {
+      "jour": "Vendredi 11 jul",
+      "type": "Dîner",
+      "plat": "Balletjes végé · riz · petits pois",
+      "items": [
+        { "pilier": "proteine", "nom": "balletjes végé", "qte": "100g" },
+        { "pilier": "glucide", "nom": "riz basmati", "qte": "1 main creuse" },
+        { "pilier": "legume", "nom": "petits pois (bocal)", "qte": "2 poings" },
+        { "pilier": "extra", "nom": "ail", "qte": "1 gousse" },
+        { "pilier": "extra", "nom": "échalote", "qte": "1" },
+        { "pilier": "extra", "nom": "sauce soja", "qte": "1 c.à.s" }
       ]
     }
   ]
