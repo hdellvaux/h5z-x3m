@@ -12,7 +12,10 @@
         { "nom": "Œufs", "qte": "2–3" },
         { "nom": "Skyr", "qte": "250g" },
         { "nom": "Schnitzel végé", "qte": "2 stuks" },
-        { "nom": "Balletjes végé", "qte": "100g" }
+        { "nom": "Balletjes végé", "qte": "100g" },
+        { "nom": "Escalope de poulet panée", "qte": "100g" },
+        { "nom": "Saumon fumé", "qte": "50g" },
+        { "nom": "Boulettes de viande", "qte": "150g" }
       ]
     },
     {
@@ -25,7 +28,9 @@
         { "nom": "Lentilles", "qte": "½ bocal" },
         { "nom": "Flocons d'avoine", "qte": "2 c.à.s" },
         { "nom": "Riz basmati", "qte": "1 main creuse" },
-        { "nom": "Pita", "qte": "1–2 stuks" }
+        { "nom": "Pita", "qte": "1–2 stuks" },
+        { "nom": "Riz complet", "qte": "1 main creuse" },
+        { "nom": "Pâtes complètes", "qte": "80g" }
       ]
     },
     {
@@ -51,7 +56,8 @@
         { "nom": "Concombre", "qte": "" },
         { "nom": "Petits pois", "qte": "2 poings" },
         { "nom": "Tomates en grappe", "qte": "" },
-        { "nom": "Roerbakmix légumes", "qte": "2 poings" }
+        { "nom": "Roerbakmix légumes", "qte": "2 poings" },
+        { "nom": "Salade little gem", "qte": "" }
       ]
     },
     {
@@ -63,7 +69,8 @@
         { "nom": "Pomme", "qte": "1" },
         { "nom": "Myrtilles", "qte": "1 poing" },
         { "nom": "Fruits rouges", "qte": "1 poing" },
-        { "nom": "Banane", "qte": "1" }
+        { "nom": "Banane", "qte": "1" },
+        { "nom": "Nectarine", "qte": "1" }
       ]
     },
     {
@@ -79,7 +86,10 @@
         { "nom": "Huile de sésame", "qte": "1 c.à.c" },
         { "nom": "Citron", "qte": "" },
         { "nom": "Oregano", "qte": "pincée" },
-        { "nom": "Basilicum", "qte": "pincée" }
+        { "nom": "Basilicum", "qte": "pincée" },
+        { "nom": "Moutarde", "qte": "1 c.à.c" },
+        { "nom": "Aneth", "qte": "pincée" },
+        { "nom": "Bouillon", "qte": "1 cube" }
       ]
     }
   ]
