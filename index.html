@@ -377,7 +377,7 @@
 
     <ul class="meals" id="meals"></ul>
 
-      <section class="portions" aria-label="Rappel des portions">
+    <section class="portions" id="portions" aria-label="Rappel des portions">
       <h2>Rappel des portions</h2>
       <div class="sub">Repères par dîner, ingrédients ci-dessus pour deux</div>
       <dl>
@@ -389,7 +389,7 @@
       </dl>
     </section>
 
-      <footer class="note">Une portion dans l’assiette · une dans le tupperware</footer>
+    <footer class="note" id="note">Une portion dans l’assiette · une dans le tupperware</footer>
   </main>
 
 <script>
@@ -397,6 +397,8 @@
   (function () {
     var kickerEl = document.getElementById("kicker");
     var listEl = document.getElementById("meals");
+    var portionsEl = document.getElementById("portions");
+    var noteEl = document.getElementById("note");
 
     // Pillar -> emoji. Anything not in this map (citron, miel, huile…) is an
     // "extra" and gets a muted neutral dot.
@@ -472,15 +474,19 @@
     }
 
     function showEmpty(msg) {
+      portionsEl.hidden = true;
+      noteEl.hidden = true;
       listEl.innerHTML = '<li class="empty">' + escape(msg) + "</li>";
     }
 
     function render(data) {
       if (!data || !Array.isArray(data.repas) || data.repas.length === 0) {
-        showEmpty("Recettes pas encore publiées.");
+        showEmpty("Aucune recette validée pour le moment.");
         return;
       }
       kickerEl.textContent = data.titre || "À table";
+      portionsEl.hidden = false;
+      noteEl.hidden = false;
 
       var html = data.repas.map(function (m, i) {
         var delay = (0.06 * i + 0.05).toFixed(2);
@@ -509,7 +515,7 @@
       })
       .then(render)
       .catch(function () {
-        showEmpty("Recettes pas encore publiées.");
+        showEmpty("Recettes indisponibles. Réessaie plus tard.");
       });
   })();
 </script>
