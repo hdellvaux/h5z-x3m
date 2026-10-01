@@ -1,83 +1,61 @@
 {
-  "semaine": "Semaine du 23 juillet 2026",
-  "maj": "2026-07-15",
+  "titre": "TEST — recettes non validées",
   "repas": [
     {
-      "jour": "Jeudi 23 jul",
-      "type": "Dîner",
-      "plat": "Tagliatelles au saumon",
+      "plat": "Poulet citron-paprika, brocoli et riz complet",
+      "portions": "2 dîners · 1 personne · quantités pour les deux",
       "items": [
-        { "pilier": "proteine", "nom": "saumon fumé", "qte": "100g" },
-        { "pilier": "proteine", "nom": "jaune d'œuf", "qte": "1" },
-        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "80g" },
-        { "pilier": "extra", "nom": "citron", "qte": "" },
-        { "pilier": "extra", "nom": "aneth", "qte": "pincée" }
+        { "pilier": "proteine", "nom": "Poulet", "qte": "300 g" },
+        { "pilier": "legume", "nom": "Brocoli", "qte": "400 g" },
+        { "pilier": "glucide", "nom": "Riz complet cru", "qte": "140 g" },
+        { "pilier": "extra", "nom": "Citron", "qte": "1" },
+        { "pilier": "gras", "nom": "Huile d’olive", "qte": "1 c. à s." },
+        { "pilier": "extra", "nom": "Paprika fumé", "qte": "1 c. à c." },
+        { "pilier": "extra", "nom": "Sel et poivre", "qte": "selon ton goût" }
+      ],
+      "recette": [
+        { "etape": "Préparer", "detail": "Coupe le poulet en morceaux de taille similaire. Coupe le brocoli en petits bouquets. Coupe le citron en deux." },
+        { "etape": "Cuire le riz", "detail": "Mets le riz dans une casserole d’eau bouillante. Laisse cuire le temps indiqué sur le paquet (souvent 20 à 25 min pour du riz complet), puis égoutte-le. Goûte un grain : il doit être tendre." },
+        { "etape": "Cuire le brocoli", "detail": "Dans une autre casserole d’eau bouillante, mets le brocoli pendant 5 à 7 min, puis égoutte-le. Pique un bouquet avec une fourchette : elle doit entrer facilement, sans que le brocoli se défasse." },
+        { "etape": "Cuire le poulet", "detail": "Chauffe l’huile dans une poêle à feu moyen. Ajoute le poulet, le paprika, du sel et du poivre ; mélange pour enrober les morceaux. Laisse cuire environ 8 à 10 min en les retournant régulièrement. Ouvre le morceau le plus épais : l’intérieur doit être entièrement cuit, sans zone rose." },
+        { "etape": "Finir", "detail": "Coupe le feu, presse le citron sur le poulet et mélange. Répartis riz, brocoli et poulet en deux portions : sers-en une, mets l’autre dans un tupperware." }
       ]
     },
     {
-      "jour": "Vendredi 24 jul",
-      "type": "Dîner",
-      "plat": "Riz kip",
+      "plat": "Poêlée de pois chiches, courgette et tomates au cumin",
+      "portions": "2 dîners · 1 personne · quantités pour les deux",
       "items": [
-        { "pilier": "proteine", "nom": "escalope de poulet panée émiettée", "qte": "100g" },
-        { "pilier": "glucide", "nom": "riz complet", "qte": "1 main creuse" },
-        { "pilier": "extra", "nom": "oignon", "qte": "½" },
-        { "pilier": "extra", "nom": "bouillon", "qte": "1 cube" },
-        { "pilier": "extra", "nom": "moutarde", "qte": "1 c.à.c" }
+        { "pilier": "proteine", "nom": "Pois chiches égouttés", "qte": "250 g" },
+        { "pilier": "legume", "nom": "Courgette", "qte": "1" },
+        { "pilier": "legume", "nom": "Tomates fraîches", "qte": "250 g" },
+        { "pilier": "extra", "nom": "Oignon", "qte": "½" },
+        { "pilier": "gras", "nom": "Huile d’olive", "qte": "1 c. à s." },
+        { "pilier": "extra", "nom": "Cumin moulu", "qte": "1 c. à c." },
+        { "pilier": "extra", "nom": "Sel et poivre", "qte": "selon ton goût" }
+      ],
+      "recette": [
+        { "etape": "Préparer", "detail": "Égoutte et rince les pois chiches. Coupe la courgette et les tomates en petits morceaux ; émince le demi-oignon en fines lamelles." },
+        { "etape": "Cuire l’oignon", "detail": "Chauffe l’huile dans une poêle à feu moyen. Ajoute l’oignon et remue pendant 3 à 4 min : il doit ramollir sans noircir." },
+        { "etape": "Cuire la courgette", "detail": "Ajoute la courgette et le cumin. Mélange, puis laisse cuire 6 à 8 min à feu moyen en remuant toutes les 1 à 2 min. La courgette doit commencer à devenir tendre." },
+        { "etape": "Finir", "detail": "Ajoute les tomates et les pois chiches. Sale et poivre. Laisse cuire à découvert 5 min à feu moyen-doux en remuant deux fois, jusqu’à ce que les tomates rendent du jus et que les pois chiches soient chauds. Sers la moitié et mets l’autre dans un tupperware." }
       ]
     },
     {
-      "jour": "Samedi 25 jul",
-      "type": "Déj",
-      "plat": "Riz kip",
+      "plat": "Omelette feta-tomates, salade little gem",
+      "portions": "2 dîners · 1 personne · quantités pour les deux",
       "items": [
-        { "pilier": "proteine", "nom": "escalope de poulet panée émiettée", "qte": "100g" },
-        { "pilier": "glucide", "nom": "riz complet", "qte": "1 main creuse" },
-        { "pilier": "extra", "nom": "oignon", "qte": "½" },
-        { "pilier": "extra", "nom": "bouillon", "qte": "1 cube" },
-        { "pilier": "extra", "nom": "moutarde", "qte": "1 c.à.c" }
-      ]
-    },
-    {
-      "jour": "Dimanche 26 jul",
-      "type": "Déj",
-      "plat": "Boulettes tout-en-un",
-      "items": [
-        { "pilier": "proteine", "nom": "boulettes de viande", "qte": "150g" },
-        { "pilier": "legume", "nom": "chou-fleur & brocoli", "qte": "2 poings" },
-        { "pilier": "glucide", "nom": "purée de pomme de terre", "qte": "1 main creuse" }
-      ]
-    },
-    {
-      "jour": "Lundi 27 jul",
-      "type": "Dîner",
-      "plat": "Kaasschnitzel · patate douce · little gem",
-      "items": [
-        { "pilier": "proteine", "nom": "schnitzel végé", "qte": "2 stuks" },
-        { "pilier": "glucide", "nom": "patate douce en blokjes", "qte": "1 main creuse" },
-        { "pilier": "legume", "nom": "salade little gem", "qte": "" }
-      ]
-    },
-    {
-      "jour": "Mardi 28 jul",
-      "type": "Dîner",
-      "plat": "Pâtes bolo végé",
-      "items": [
-        { "pilier": "proteine", "nom": "balletjes végé", "qte": "100g" },
-        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "80g" },
-        { "pilier": "legume", "nom": "petits pois", "qte": "2 poings" },
-        { "pilier": "extra", "nom": "sauce tomate", "qte": "" }
-      ]
-    },
-    {
-      "jour": "Mercredi 29 jul",
-      "type": "Dîner",
-      "plat": "Pâtes bolo végé",
-      "items": [
-        { "pilier": "proteine", "nom": "balletjes végé", "qte": "100g" },
-        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "80g" },
-        { "pilier": "legume", "nom": "petits pois", "qte": "2 poings" },
-        { "pilier": "extra", "nom": "sauce tomate", "qte": "" }
+        { "pilier": "proteine", "nom": "Œufs", "qte": "4" },
+        { "pilier": "proteine", "nom": "Feta", "qte": "100 g" },
+        { "pilier": "legume", "nom": "Tomates fraîches", "qte": "250 g" },
+        { "pilier": "legume", "nom": "Salade little gem", "qte": "1" },
+        { "pilier": "gras", "nom": "Huile d’olive", "qte": "1 c. à s." },
+        { "pilier": "extra", "nom": "Basilic séché", "qte": "1 pincée" },
+        { "pilier": "extra", "nom": "Sel et poivre", "qte": "selon ton goût" }
+      ],
+      "recette": [
+        { "etape": "Préparer", "detail": "Coupe les tomates en petits morceaux. Rince et coupe la salade. Bats les 4 œufs à la fourchette dans un bol avec le basilic, une petite pincée de sel et du poivre ; émiette la feta." },
+        { "etape": "Cuire", "detail": "Mets la moitié de l’huile dans une poêle à feu moyen. Ajoute les tomates et remue 2 min. Verse les œufs, répartis la feta, puis baisse à feu doux. Laisse cuire 5 à 7 min sans remuer : le dessus ne doit plus être liquide." },
+        { "etape": "Servir", "detail": "Coupe l’omelette en deux. Sers une moitié avec la moitié de la salade ; mets l’autre moitié d’omelette et le reste de salade dans un tupperware. Verse le reste d’huile sur la salade servie, et réserve l’autre part d’huile pour la seconde salade." }
       ]
     }
   ]

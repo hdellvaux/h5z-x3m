@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#efe6d4" />
-<title>Menu de la semaine</title>
+<title>Trois recettes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -79,22 +79,6 @@
     font-optical-sizing: auto;
   }
 
-  .week {
-    margin-top: 0.9rem;
-    font-family: var(--serif);
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(1rem, 4.2vw, 1.18rem);
-    color: var(--ink-soft);
-  }
-  .maj {
-    margin-top: 0.25rem;
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent-dim);
-  }
-
   .rule {
     width: 46px;
     height: 1px;
@@ -119,23 +103,12 @@
     gap: 0.6rem;
     margin-bottom: 0.35rem;
   }
-  .meal__day {
+  .meal__portions {
     font-size: 0.74rem;
     font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--ink);
-  }
-  .meal__type {
-    font-size: 0.64rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
+    letter-spacing: 0.1em;
     color: var(--accent);
-    border: 1px solid var(--accent-dim);
-    border-radius: 999px;
-    padding: 0.14em 0.6em;
-    white-space: nowrap;
+    margin-bottom: 0.45rem;
   }
 
   .meal__plat {
@@ -347,7 +320,7 @@
     max-height: 0;
     transition: max-height 0.38s cubic-bezier(0.22, 1, 0.36, 1);
   }
-  .recipe.open { max-height: 800px; }
+  .recipe.open { max-height: 1800px; }
 
   .recipe__steps {
     list-style: none;
@@ -397,24 +370,16 @@
 <body>
   <main class="sheet">
     <header>
-      <div class="kicker">À table</div>
-      <h1>Menu de&nbsp;la&nbsp;semaine</h1>
-      <div class="week" id="week">&nbsp;</div>
-      <div class="maj" id="maj"></div>
+      <div class="kicker" id="kicker">À table</div>
+      <h1>Trois recettes</h1>
       <div class="rule"></div>
     </header>
 
-    <nav class="tabs" role="tablist">
-      <button class="tab-btn" role="tab" aria-selected="true"  data-tab="menu">Menu</button>
-      <button class="tab-btn" role="tab" aria-selected="false" data-tab="ingredients">Ingrédients</button>
-    </nav>
-
-    <div id="panel-menu">
-      <ul class="meals" id="meals"></ul>
+    <ul class="meals" id="meals"></ul>
 
       <section class="portions" aria-label="Rappel des portions">
       <h2>Rappel des portions</h2>
-      <div class="sub">La main comme balance</div>
+      <div class="sub">Repères par dîner, ingrédients ci-dessus pour deux</div>
       <dl>
         <div class="row"><span class="emoji">🥩</span><dt>Protéine</dt><dd>1,5 à 2 paumes</dd></div>
         <div class="row"><span class="emoji">🌾</span><dt>Glucide</dt><dd>1 à 1,5 main creuse</dd></div>
@@ -424,21 +389,14 @@
       </dl>
     </section>
 
-      <footer class="note">Picnic · validé à la main dans l'app</footer>
-    </div>
-
-    <div id="panel-ingredients" hidden>
-      <div class="ing-grid" id="ing-grid"></div>
-    </div>
+      <footer class="note">Une portion dans l’assiette · une dans le tupperware</footer>
   </main>
 
 <script>
-  // Render the week's portioned menu from menu.json.
-  // Architecture: this file is static; only menu.json changes each week.
+  // Render three freely scheduled recipes from menu.json.
   (function () {
-    var weekEl  = document.getElementById("week");
-    var majEl   = document.getElementById("maj");
-    var listEl  = document.getElementById("meals");
+    var kickerEl = document.getElementById("kicker");
+    var listEl = document.getElementById("meals");
 
     // Pillar -> emoji. Anything not in this map (citron, miel, huile…) is an
     // "extra" and gets a muted neutral dot.
@@ -519,22 +477,17 @@
 
     function render(data) {
       if (!data || !Array.isArray(data.repas) || data.repas.length === 0) {
-        weekEl.textContent = "";
-        showEmpty("Menu pas encore publié.");
+        showEmpty("Recettes pas encore publiées.");
         return;
       }
-      weekEl.textContent = data.semaine || "";
-      majEl.textContent  = data.maj ? "Mis à jour le " + data.maj : "";
+      kickerEl.textContent = data.titre || "À table";
 
       var html = data.repas.map(function (m, i) {
         var delay = (0.06 * i + 0.05).toFixed(2);
         return (
           '<li class="meal" style="animation-delay:' + delay + 's">' +
-            '<div class="meal__head">' +
-              '<span class="meal__day">' + escape(m.jour || "") + "</span>" +
-              (m.type ? '<span class="meal__type">' + escape(m.type) + "</span>" : "") +
-            "</div>" +
             '<div class="meal__plat">' + escape(m.plat || "") + "</div>" +
+            '<div class="meal__portions">' + escape(m.portions || "") + "</div>" +
             (Array.isArray(m.items) && m.items.length
               ? renderItems(m.items)
               : (m.detail
@@ -549,55 +502,6 @@
       listEl.innerHTML = html;
     }
 
-    // Tab switching
-    var tabs   = document.querySelectorAll(".tab-btn");
-    var panels = { menu: document.getElementById("panel-menu"), ingredients: document.getElementById("panel-ingredients") };
-    tabs.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        tabs.forEach(function (b) { b.setAttribute("aria-selected", "false"); });
-        btn.setAttribute("aria-selected", "true");
-        Object.keys(panels).forEach(function (k) { panels[k].hidden = true; });
-        panels[btn.dataset.tab].hidden = false;
-      });
-    });
-
-    // Ingredients grid
-    function renderIngredients(data) {
-      var grid = document.getElementById("ing-grid");
-      if (!data || !Array.isArray(data.categories)) return;
-      grid.innerHTML = data.categories.map(function (cat) {
-        var items = cat.items.map(function (it) {
-          return (
-            '<li class="ing-item">' +
-              '<span class="ing-item__nom">' + escape(it.nom) + "</span>" +
-              (it.qte ? '<span class="ing-item__qte">' + escape(it.qte) + "</span>" : "") +
-            "</li>"
-          );
-        }).join("");
-        return (
-          '<div class="ing-col">' +
-            '<div class="ing-col__head">' +
-              '<span class="ing-col__emoji">' + cat.emoji + "</span>" +
-              '<span class="ing-col__label">' + escape(cat.label) + "</span>" +
-            "</div>" +
-            '<ul class="ing-col__items">' + items + "</ul>" +
-          "</div>"
-        );
-      }).join("");
-
-      // mobile accordion toggle
-      grid.querySelectorAll(".ing-col__head").forEach(function (head) {
-        head.addEventListener("click", function () {
-          head.closest(".ing-col").classList.toggle("open");
-        });
-      });
-    }
-
-    fetch("ingredients.json", { cache: "no-store" })
-      .then(function (r) { return r.json(); })
-      .then(renderIngredients)
-      .catch(function () {});
-
     fetch("menu.json", { cache: "no-store" })
       .then(function (r) {
         if (!r.ok) throw new Error("http " + r.status);
@@ -605,8 +509,7 @@
       })
       .then(render)
       .catch(function () {
-        weekEl.textContent = "";
-        showEmpty("Menu pas encore publié.");
+        showEmpty("Recettes pas encore publiées.");
       });
   })();
 </script>
