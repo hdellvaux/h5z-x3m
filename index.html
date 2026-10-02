@@ -214,10 +214,26 @@
     margin-right: 1.4rem;
   }
   .tab-btn:hover { color: var(--ink); }
-  .tab-btn[aria-selected="true"] {
+  .tab-btn[aria-current="page"] {
     color: var(--accent);
     border-bottom-color: var(--accent);
   }
+
+  .tab-btn { text-decoration: none; }
+  .panel[hidden] { display: none; }
+  .assistant-instructions {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: clamp(1.2rem, 5vw, 1.7rem);
+  }
+  .assistant-instructions h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.35rem;
+    margin-bottom: 0.8rem;
+  }
+  .assistant-instructions p + p { margin-top: 1rem; }
 
   /* ---------- ingredients grid ---------- */
   .ing-grid {
@@ -375,6 +391,12 @@
       <div class="rule"></div>
     </header>
 
+    <nav class="tabs" aria-label="Sections du site">
+      <a class="tab-btn" href="#recettes" aria-current="page">Recettes</a>
+      <a class="tab-btn" href="#instructions">Instructions pour Claude</a>
+    </nav>
+
+    <div class="panel" id="recettes">
     <ul class="meals" id="meals"></ul>
 
     <section class="portions" id="portions" aria-label="Rappel des portions">
@@ -390,9 +412,39 @@
     </section>
 
     <footer class="note" id="note">Une portion dans l’assiette · une dans le tupperware</footer>
+    </div>
+
+    <section class="panel assistant-instructions" id="instructions" aria-labelledby="instructions-title" hidden>
+      <h2 id="instructions-title">Instructions pour Claude — assistant cuisine</h2>
+      <p>Aide la personne qui cuisine à réaliser les recettes affichées sur ce site. Si la question ne précise pas la recette concernée et que plusieurs conviennent, demande laquelle.</p>
+      <p>Explique les gestes comme à quelqu’un qui débute : précise quoi faire, à quel feu, pendant combien de temps environ, s’il faut remuer ou couvrir, et quel signe observable indique que l’étape est terminée. Ne te contente pas de « faire revenir » ou « faire réduire » sans expliquer comment.</p>
+      <p>Utilise les ingrédients, quantités et étapes publiés pour décrire la <strong>recette d’origine</strong>. Si on te demande si une substitution est possible, réponds librement : explique ce qu’elle change dans le goût, les quantités ou la cuisson, et adapte les étapes si nécessaire. Distingue clairement cette version adaptée de la recette publiée.</p>
+      <p>Si une information manque, dis-le plutôt que de l’inventer. Pour une cuisson comportant un risque sanitaire, ne te fie pas uniquement à une durée : indique aussi comment vérifier que l’aliment est suffisamment cuit.</p>
+    </section>
   </main>
 
 <script>
+  // Keep the instructions in the HTML so they remain readable without JavaScript.
+  (function () {
+    var tabs = document.querySelectorAll(".tabs a");
+    var recipes = document.getElementById("recettes");
+    var instructions = document.getElementById("instructions");
+    function showTab() {
+      var onInstructions = window.location.hash === "#instructions";
+      recipes.hidden = onInstructions;
+      instructions.hidden = !onInstructions;
+      tabs.forEach(function (tab) {
+        if (tab.getAttribute("href") === (onInstructions ? "#instructions" : "#recettes")) {
+          tab.setAttribute("aria-current", "page");
+        } else {
+          tab.removeAttribute("aria-current");
+        }
+      });
+    }
+    window.addEventListener("hashchange", showTab);
+    showTab();
+  })();
+
   // Render three freely scheduled recipes from menu.json.
   (function () {
     var kickerEl = document.getElementById("kicker");
