@@ -1,4 +1,64 @@
 {
-  "titre": "À table",
-  "repas": []
+  "titre": "Trois recettes à faire quand je veux",
+  "repas": [
+    {
+      "plat": "Tofu fumé et brocoli frais sautés au citron",
+      "portions": "2 dîners · 1 personne",
+      "items": [
+        { "pilier": "proteine", "nom": "tofu fumé", "qte": "300 g" },
+        { "pilier": "legume", "nom": "brocoli frais", "qte": "400 g" },
+        { "pilier": "extra", "nom": "ail", "qte": "2 gousses" },
+        { "pilier": "extra", "nom": "citron", "qte": "1" },
+        { "pilier": "extra", "nom": "sauce soja", "qte": "2 cs" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 cs" }
+      ],
+      "recette": [
+        { "etape": "Préparer", "detail": "Coupe le tofu en dés et le brocoli en petites fleurettes. Pèle et hache les 2 gousses d’ail ; presse le citron." },
+        { "etape": "Cuire le brocoli", "detail": "Chauffe l’huile dans une grande poêle à feu moyen. Ajoute le brocoli et remue régulièrement pendant environ 8 minutes, jusqu’à ce que les fleurettes soient tendres sous la pointe d’un couteau." },
+        { "etape": "Ajouter le tofu", "detail": "Ajoute les dés de tofu. Monte à feu moyen-vif et remue pendant environ 4 minutes, jusqu’à ce que leurs faces soient dorées." },
+        { "etape": "Assaisonner", "detail": "Baisse à feu doux. Ajoute l’ail et remue 1 minute sans le laisser brunir. Verse la sauce soja et le jus du citron ; mélange pour enrober le tout, puis coupe le feu." },
+        { "etape": "Servir", "detail": "Sers la moitié dans une assiette et mets l’autre moitié dans un tupperware." }
+      ]
+    },
+    {
+      "plat": "Pâtes complètes au thon et tomates",
+      "portions": "2 dîners · 1 personne",
+      "items": [
+        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "180 g crues" },
+        { "pilier": "proteine", "nom": "thon", "qte": "240 g égouttés" },
+        { "pilier": "legume", "nom": "tomates fraîches", "qte": "300 g" },
+        { "pilier": "extra", "nom": "ail", "qte": "2 gousses" },
+        { "pilier": "extra", "nom": "citron", "qte": "½" }
+      ],
+      "recette": [
+        { "etape": "Préparer", "detail": "Coupe les tomates en petits dés, pèle et hache les 2 gousses d’ail, presse le demi-citron et égoutte le thon." },
+        { "etape": "Cuire les pâtes", "detail": "Plonge les pâtes dans une casserole d’eau bouillante. Remue une fois, puis cuis-les selon le temps indiqué sur le paquet ; goûte une pâte pour vérifier qu’elle est tendre. Égoutte-les." },
+        { "etape": "Cuire les tomates", "detail": "Pendant ce temps, mets les tomates dans une grande poêle à feu moyen. Remue régulièrement pendant environ 5 minutes, jusqu’à ce qu’elles ramollissent et rendent du jus. Ajoute l’ail et remue encore 1 minute." },
+        { "etape": "Assembler", "detail": "Baisse à feu doux. Ajoute le thon égoutté et les pâtes ; remue environ 2 minutes, jusqu’à ce que le thon soit chaud. Coupe le feu, verse le jus de citron et mélange." },
+        { "etape": "Servir", "detail": "Sers la moitié dans une assiette et mets l’autre moitié dans un tupperware." }
+      ]
+    },
+    {
+      "plat": "Shakshuka œufs pois chiches",
+      "portions": "2 dîners · 1 personne",
+      "items": [
+        { "pilier": "proteine", "nom": "œufs", "qte": "4" },
+        { "pilier": "proteine", "nom": "pois chiches", "qte": "240 g égouttés" },
+        { "pilier": "legume", "nom": "poivrons frais", "qte": "2 (~300 g)" },
+        { "pilier": "legume", "nom": "tomates fraîches", "qte": "400 g" },
+        { "pilier": "extra", "nom": "ail", "qte": "2 gousses" },
+        { "pilier": "extra", "nom": "cumin", "qte": "1 cc" },
+        { "pilier": "extra", "nom": "paprika fumé", "qte": "1 cc" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 cs" },
+        { "pilier": "extra", "nom": "sel", "qte": "à ton goût" }
+      ],
+      "recette": [
+        { "etape": "Préparer", "detail": "Retire les graines des poivrons et coupe-les en petits morceaux. Coupe les tomates en dés, pèle et hache les 2 gousses d’ail, puis égoutte les pois chiches." },
+        { "etape": "Cuire les légumes", "detail": "Chauffe l’huile dans une grande poêle à feu moyen. Ajoute les poivrons ; remue régulièrement environ 6 minutes, jusqu’à ce qu’ils commencent à ramollir. Ajoute l’ail, le cumin et le paprika fumé ; remue 1 minute sans laisser brunir l’ail." },
+        { "etape": "Faire la base", "detail": "Ajoute les tomates, les pois chiches et le sel. Mélange, puis laisse cuire à feu moyen environ 10 minutes, sans couvercle, en remuant parfois : les tomates doivent être défaites et la préparation encore assez épaisse pour former des creux." },
+        { "etape": "Cuire les œufs", "detail": "Forme 4 creux et casse un œuf dans chacun. Baisse à feu doux, couvre et laisse cuire environ 6 à 10 minutes. Vérifie que les blancs sont entièrement opaques et les jaunes fermes ; prolonge la cuisson si nécessaire." },
+        { "etape": "Servir", "detail": "Sers deux œufs et la moitié des légumes et pois chiches dans une assiette ; mets les deux autres œufs et le reste dans un tupperware." }
+      ]
+    }
+  ]
 }
