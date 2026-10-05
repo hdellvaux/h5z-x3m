@@ -2,62 +2,59 @@
   "titre": "Trois recettes à faire quand je veux",
   "repas": [
     {
-      "plat": "Tofu fumé et brocoli frais sautés au citron",
+      "plat": "Poulet paprika-citron, brocoli et riz gluant",
       "portions": "2 dîners · 1 personne",
       "items": [
-        { "pilier": "proteine", "nom": "tofu fumé", "qte": "300 g" },
-        { "pilier": "legume", "nom": "brocoli frais", "qte": "400 g" },
-        { "pilier": "extra", "nom": "ail", "qte": "2 gousses" },
-        { "pilier": "extra", "nom": "citron", "qte": "1" },
-        { "pilier": "extra", "nom": "sauce soja", "qte": "2 cs" },
-        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 cs" }
+        { "pilier": "proteine", "nom": "poulet", "qte": "300 g" },
+        { "pilier": "legume", "nom": "brocoli frais", "qte": "1 tête (environ 400–500 g)" },
+        { "pilier": "glucide", "nom": "riz gluant", "qte": "150 g sec" },
+        { "pilier": "extra", "nom": "citron", "qte": "½" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "15 ml" },
+        { "pilier": "extra", "nom": "paprika fumé", "qte": "1 c. à café" }
       ],
       "recette": [
-        { "etape": "Préparer", "detail": "Coupe le tofu en dés et le brocoli en petites fleurettes. Pèle et hache les 2 gousses d’ail ; presse le citron." },
-        { "etape": "Cuire le brocoli", "detail": "Chauffe l’huile dans une grande poêle à feu moyen. Ajoute le brocoli et remue régulièrement pendant environ 8 minutes, jusqu’à ce que les fleurettes soient tendres sous la pointe d’un couteau." },
-        { "etape": "Ajouter le tofu", "detail": "Ajoute les dés de tofu. Monte à feu moyen-vif et remue pendant environ 4 minutes, jusqu’à ce que leurs faces soient dorées." },
-        { "etape": "Assaisonner", "detail": "Baisse à feu doux. Ajoute l’ail et remue 1 minute sans le laisser brunir. Verse la sauce soja et le jus du citron ; mélange pour enrober le tout, puis coupe le feu." },
-        { "etape": "Servir", "detail": "Sers la moitié dans une assiette et mets l’autre moitié dans un tupperware." }
+        { "etape": "Cuire le riz", "detail": "Rincer le riz. Le faire tremper si le paquet le demande, puis le cuire selon ses indications : porter à ébullition, baisser le feu et couvrir si indiqué." },
+        { "etape": "Préparer", "detail": "Couper le brocoli en petites fleurettes et le poulet en morceaux réguliers. Prélever le jus du demi-citron." },
+        { "etape": "Cuire le brocoli", "detail": "Chauffer 5 ml d’huile à feu moyen dans une poêle. Cuire le brocoli environ 8–10 min en remuant régulièrement, jusqu’à ce qu’une fourchette y entre facilement. Le retirer." },
+        { "etape": "Cuire le poulet", "detail": "Verser les 10 ml d’huile restants dans la poêle. Cuire le poulet à feu moyen environ 8–12 min en retournant les morceaux ; ajouter le paprika pendant la dernière minute. Vérifier le morceau le plus épais : cœur entièrement cuit, sans partie rosée, idéalement 74 °C à cœur. Remettre le brocoli et ajouter le citron hors du feu." },
+        { "etape": "Répartir", "detail": "Servir la moitié avec la moitié du riz ; mettre l’autre moitié dans un tupperware." }
       ]
     },
     {
-      "plat": "Pâtes complètes au thon et tomates",
-      "portions": "2 dîners · 1 personne",
-      "items": [
-        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "180 g crues" },
-        { "pilier": "proteine", "nom": "thon", "qte": "240 g égouttés" },
-        { "pilier": "legume", "nom": "tomates fraîches", "qte": "300 g" },
-        { "pilier": "extra", "nom": "ail", "qte": "2 gousses" },
-        { "pilier": "extra", "nom": "citron", "qte": "½" }
-      ],
-      "recette": [
-        { "etape": "Préparer", "detail": "Coupe les tomates en petits dés, pèle et hache les 2 gousses d’ail, presse le demi-citron et égoutte le thon." },
-        { "etape": "Cuire les pâtes", "detail": "Plonge les pâtes dans une casserole d’eau bouillante. Remue une fois, puis cuis-les selon le temps indiqué sur le paquet ; goûte une pâte pour vérifier qu’elle est tendre. Égoutte-les." },
-        { "etape": "Cuire les tomates", "detail": "Pendant ce temps, mets les tomates dans une grande poêle à feu moyen. Remue régulièrement pendant environ 5 minutes, jusqu’à ce qu’elles ramollissent et rendent du jus. Ajoute l’ail et remue encore 1 minute." },
-        { "etape": "Assembler", "detail": "Baisse à feu doux. Ajoute le thon égoutté et les pâtes ; remue environ 2 minutes, jusqu’à ce que le thon soit chaud. Coupe le feu, verse le jus de citron et mélange." },
-        { "etape": "Servir", "detail": "Sers la moitié dans une assiette et mets l’autre moitié dans un tupperware." }
-      ]
-    },
-    {
-      "plat": "Shakshuka œufs pois chiches",
+      "plat": "Œufs à la tomate, poivron et feta",
       "portions": "2 dîners · 1 personne",
       "items": [
         { "pilier": "proteine", "nom": "œufs", "qte": "4" },
-        { "pilier": "proteine", "nom": "pois chiches", "qte": "240 g égouttés" },
-        { "pilier": "legume", "nom": "poivrons frais", "qte": "2 (~300 g)" },
-        { "pilier": "legume", "nom": "tomates fraîches", "qte": "400 g" },
-        { "pilier": "extra", "nom": "ail", "qte": "2 gousses" },
-        { "pilier": "extra", "nom": "cumin", "qte": "1 cc" },
-        { "pilier": "extra", "nom": "paprika fumé", "qte": "1 cc" },
-        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 cs" },
-        { "pilier": "extra", "nom": "sel", "qte": "à ton goût" }
+        { "pilier": "legume", "nom": "poivron frais", "qte": "1" },
+        { "pilier": "legume", "nom": "polpa", "qte": "400 g" },
+        { "pilier": "proteine", "nom": "feta", "qte": "100 g" },
+        { "pilier": "extra", "nom": "cumin moulu", "qte": "1 c. à café" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "15 ml" }
       ],
       "recette": [
-        { "etape": "Préparer", "detail": "Retire les graines des poivrons et coupe-les en petits morceaux. Coupe les tomates en dés, pèle et hache les 2 gousses d’ail, puis égoutte les pois chiches." },
-        { "etape": "Cuire les légumes", "detail": "Chauffe l’huile dans une grande poêle à feu moyen. Ajoute les poivrons ; remue régulièrement environ 6 minutes, jusqu’à ce qu’ils commencent à ramollir. Ajoute l’ail, le cumin et le paprika fumé ; remue 1 minute sans laisser brunir l’ail." },
-        { "etape": "Faire la base", "detail": "Ajoute les tomates, les pois chiches et le sel. Mélange, puis laisse cuire à feu moyen environ 10 minutes, sans couvercle, en remuant parfois : les tomates doivent être défaites et la préparation encore assez épaisse pour former des creux." },
-        { "etape": "Cuire les œufs", "detail": "Forme 4 creux et casse un œuf dans chacun. Baisse à feu doux, couvre et laisse cuire environ 6 à 10 minutes. Vérifie que les blancs sont entièrement opaques et les jaunes fermes ; prolonge la cuisson si nécessaire." },
-        { "etape": "Servir", "detail": "Sers deux œufs et la moitié des légumes et pois chiches dans une assiette ; mets les deux autres œufs et le reste dans un tupperware." }
+        { "etape": "Préparer", "detail": "Épépiner et couper le poivron en petits morceaux ; émietter la feta." },
+        { "etape": "Cuire le poivron", "detail": "Chauffer l’huile à feu moyen dans une poêle. Ajouter le poivron et cuire environ 6–8 min en remuant, jusqu’à ce qu’il ramollisse." },
+        { "etape": "Faire la sauce", "detail": "Ajouter la polpa et le cumin. Mélanger, puis laisser frémir à feu doux environ 8–10 min, sans couvercle, en remuant de temps en temps : la sauce doit épaissir légèrement." },
+        { "etape": "Cuire les œufs", "detail": "Former quatre creux dans la sauce, y casser les œufs, couvrir et cuire à feu doux environ 5–8 min, jusqu’à ce que blancs et jaunes soient pris. Répartir la feta dessus." },
+        { "etape": "Répartir", "detail": "Servir deux œufs et la moitié de la sauce ; mettre le reste dans un tupperware." }
+      ]
+    },
+    {
+      "plat": "Pâtes complètes au maquereau et à la courgette",
+      "portions": "2 dîners · 1 personne",
+      "items": [
+        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "160 g sèches" },
+        { "pilier": "proteine", "nom": "maquereau", "qte": "2 boîtes de 125 g (environ 180 g de poisson estimés, poids égoutté non confirmé)" },
+        { "pilier": "legume", "nom": "courgette", "qte": "1" },
+        { "pilier": "extra", "nom": "citron", "qte": "½" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "15 ml" }
+      ],
+      "recette": [
+        { "etape": "Cuire les pâtes", "detail": "Porter une casserole d’eau à ébullition. Cuire les pâtes selon le temps indiqué sur le paquet, puis les égoutter." },
+        { "etape": "Préparer", "detail": "Couper la courgette en petits morceaux ; ouvrir les boîtes de maquereau et prélever le jus du demi-citron." },
+        { "etape": "Cuire la courgette", "detail": "Chauffer l’huile à feu moyen dans une poêle. Cuire la courgette environ 7–10 min en remuant régulièrement, jusqu’à ce qu’elle soit tendre." },
+        { "etape": "Assembler", "detail": "Ajouter les pâtes et le maquereau ; mélanger doucement à feu doux 1–2 min, jusqu’à ce que le tout soit chaud. Couper le feu et ajouter le citron." },
+        { "etape": "Répartir", "detail": "Servir la moitié ; mettre l’autre moitié dans un tupperware." }
       ]
     }
   ]
