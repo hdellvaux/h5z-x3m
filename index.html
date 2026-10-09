@@ -92,8 +92,6 @@
   .meal {
     padding: clamp(1.1rem, 4vw, 1.5rem) 0;
     border-top: 1px solid var(--line);
-    opacity: 0;
-    animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
   .meal:first-child { border-top: none; }
 
@@ -317,15 +315,7 @@
   .recipe-btn .arrow { transition: transform 0.22s; display: inline-block; font-style: normal; }
   .recipe-btn[aria-expanded="true"] .arrow { transform: rotate(180deg); }
 
-  .recipe {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.38s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-  .recipe.open { max-height: 1800px; }
-  /* Static fallback: readable even when scripts or JSON fetching are unavailable. */
-  details.recipe[open] { max-height: none; overflow: visible; }
-  details.recipe summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  .recipe { margin-top: 0.75rem; }
 
   .recipe__steps {
     list-style: none;
@@ -397,8 +387,8 @@
           <li class="meal__item"><span class="pill" aria-hidden="true">🥑</span><span><span class="nom">huile d’olive</span> <span class="qte">15 ml</span></span></li>
           <li class="meal__item"><span class="pill pill--extra" aria-hidden="true">·</span><span><span class="nom">paprika fumé</span> <span class="qte">1 c. à café</span></span></li>
         </ul>
-        <details class="recipe" open>
-          <summary>Voir la recette</summary>
+        <section class="recipe" aria-label="Préparation">
+          <h3>Préparation</h3>
           <ol class="recipe__steps">
             <li class="recipe__step"><span class="recipe__step-label">Cuire le riz</span><span class="recipe__step-detail">Rincer le riz. Le faire tremper si le paquet le demande, puis le cuire selon ses indications : porter à ébullition, baisser le feu et couvrir si indiqué.</span></li>
             <li class="recipe__step"><span class="recipe__step-label">Préparer</span><span class="recipe__step-detail">Couper le brocoli en petites fleurettes et le poulet en morceaux réguliers. Prélever le jus du demi-citron.</span></li>
@@ -406,7 +396,7 @@
             <li class="recipe__step"><span class="recipe__step-label">Cuire le poulet</span><span class="recipe__step-detail">Verser les 10 ml d’huile restants dans la poêle. Cuire le poulet à feu moyen environ 8–12 min en retournant les morceaux ; ajouter le paprika pendant la dernière minute. Vérifier le morceau le plus épais : cœur entièrement cuit, sans partie rosée, idéalement 74 °C à cœur. Remettre le brocoli et ajouter le citron hors du feu.</span></li>
             <li class="recipe__step"><span class="recipe__step-label">Répartir</span><span class="recipe__step-detail">Servir la moitié avec la moitié du riz ; mettre l’autre moitié dans un tupperware.</span></li>
           </ol>
-        </details>
+        </section>
       </li>
       <li class="meal">
         <h2 class="meal__plat">Œufs à la tomate, poivron et feta</h2>
@@ -419,8 +409,8 @@
           <li class="meal__item"><span class="pill pill--extra" aria-hidden="true">·</span><span><span class="nom">cumin moulu</span> <span class="qte">1 c. à café</span></span></li>
           <li class="meal__item"><span class="pill" aria-hidden="true">🥑</span><span><span class="nom">huile d’olive</span> <span class="qte">15 ml</span></span></li>
         </ul>
-        <details class="recipe" open>
-          <summary>Voir la recette</summary>
+        <section class="recipe" aria-label="Préparation">
+          <h3>Préparation</h3>
           <ol class="recipe__steps">
             <li class="recipe__step"><span class="recipe__step-label">Préparer</span><span class="recipe__step-detail">Épépiner et couper le poivron en petits morceaux ; émietter la feta.</span></li>
             <li class="recipe__step"><span class="recipe__step-label">Cuire le poivron</span><span class="recipe__step-detail">Chauffer l’huile à feu moyen dans une poêle. Ajouter le poivron et cuire environ 6–8 min en remuant, jusqu’à ce qu’il ramollisse.</span></li>
@@ -428,7 +418,7 @@
             <li class="recipe__step"><span class="recipe__step-label">Cuire les œufs</span><span class="recipe__step-detail">Former quatre creux dans la sauce, y casser les œufs, couvrir et cuire à feu doux environ 5–8 min, jusqu’à ce que blancs et jaunes soient pris. Répartir la feta dessus.</span></li>
             <li class="recipe__step"><span class="recipe__step-label">Répartir</span><span class="recipe__step-detail">Servir deux œufs et la moitié de la sauce ; mettre le reste dans un tupperware.</span></li>
           </ol>
-        </details>
+        </section>
       </li>
       <li class="meal">
         <h2 class="meal__plat">Pâtes complètes au maquereau et à la courgette</h2>
@@ -440,8 +430,8 @@
           <li class="meal__item"><span class="pill pill--extra" aria-hidden="true">·</span><span><span class="nom">citron</span> <span class="qte">½</span></span></li>
           <li class="meal__item"><span class="pill" aria-hidden="true">🥑</span><span><span class="nom">huile d’olive</span> <span class="qte">15 ml</span></span></li>
         </ul>
-        <details class="recipe" open>
-          <summary>Voir la recette</summary>
+        <section class="recipe" aria-label="Préparation">
+          <h3>Préparation</h3>
           <ol class="recipe__steps">
             <li class="recipe__step"><span class="recipe__step-label">Cuire les pâtes</span><span class="recipe__step-detail">Porter une casserole d’eau à ébullition. Cuire les pâtes selon le temps indiqué sur le paquet, puis les égoutter.</span></li>
             <li class="recipe__step"><span class="recipe__step-label">Préparer</span><span class="recipe__step-detail">Couper la courgette en petits morceaux ; ouvrir les boîtes de maquereau et prélever le jus du demi-citron.</span></li>
@@ -449,7 +439,7 @@
             <li class="recipe__step"><span class="recipe__step-label">Assembler</span><span class="recipe__step-detail">Ajouter les pâtes et le maquereau ; mélanger doucement à feu doux 1–2 min, jusqu’à ce que le tout soit chaud. Couper le feu et ajouter le citron.</span></li>
             <li class="recipe__step"><span class="recipe__step-label">Répartir</span><span class="recipe__step-detail">Servir la moitié ; mettre l’autre moitié dans un tupperware.</span></li>
           </ol>
-        </details>
+        </section>
       </li>
     </ul>
 
@@ -468,132 +458,5 @@
     <footer class="note" id="note">Une portion dans l’assiette · une dans le tupperware</footer>
   </main>
 
-<script>
-  // Render three freely scheduled recipes from menu.json.
-  (function () {
-    var kickerEl = document.getElementById("kicker");
-    var listEl = document.getElementById("meals");
-    var portionsEl = document.getElementById("portions");
-    var noteEl = document.getElementById("note");
-
-    // Pillar -> emoji. Anything not in this map (citron, miel, huile…) is an
-    // "extra" and gets a muted neutral dot.
-    var PILIERS = {
-      proteine: "🥩",
-      glucide:  "🌾",
-      gras:     "🥑",
-      legume:   "🥬",
-      fruit:    "🍓"
-    };
-
-    function escape(s) {
-      return String(s).replace(/[&<>"]/g, function (c) {
-        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
-      });
-    }
-
-    // Render one ingredient's label: bold name first, then the quantity in
-    // lighter normal weight. Falls back to a legacy `texte` string if present.
-    function ingredientLabel(it) {
-      if (it.nom != null) {
-        var nom = '<span class="nom">' + escape(it.nom) + "</span>";
-        var qte = it.qte ? ' <span class="qte">' + escape(it.qte) + "</span>" : "";
-        return nom + qte;
-      }
-      return '<span class="nom">' + escape(it.texte || "") + "</span>";
-    }
-
-    // Render a meal's ingredients as a bulleted list, each tagged with its
-    // pillar emoji.
-    function renderItems(items) {
-      return '<ul class="meal__items">' + items.map(function (it) {
-        var emoji = PILIERS[it.pilier];
-        var cls   = emoji ? "pill" : "pill pill--extra";
-        var glyph = emoji || "·";
-        return (
-          '<li class="meal__item">' +
-            '<span class="' + cls + '" aria-hidden="true">' + glyph + "</span>" +
-            "<span>" + ingredientLabel(it) + "</span>" +
-          "</li>"
-        );
-      }).join("") + "</ul>";
-    }
-
-    function toggleRecipe(btn) {
-      var expanded = btn.getAttribute("aria-expanded") === "true";
-      btn.setAttribute("aria-expanded", String(!expanded));
-      var target = document.getElementById(btn.getAttribute("aria-controls"));
-      if (target) target.classList.toggle("open", !expanded);
-    }
-    // expose globally for onclick
-    window.toggleRecipe = toggleRecipe;
-
-    function renderRecette(recette, idx) {
-      if (!Array.isArray(recette) || recette.length === 0) return "";
-      var id = "recipe-" + idx;
-      var steps = recette.map(function (s) {
-        return (
-          '<li class="recipe__step">' +
-            '<span class="recipe__step-label">' + escape(s.etape) + "</span>" +
-            '<span class="recipe__step-detail">' + escape(s.detail) + "</span>" +
-          "</li>"
-        );
-      }).join("");
-      return (
-        '<button class="recipe-btn" aria-expanded="false" aria-controls="' + id + '" onclick="toggleRecipe(this)">' +
-          'Voir la recette <span class="arrow" aria-hidden="true">▾</span>' +
-        "</button>" +
-        '<div class="recipe" id="' + id + '" role="region">' +
-          '<ul class="recipe__steps">' + steps + "</ul>" +
-        "</div>"
-      );
-    }
-
-    function showEmpty(msg) {
-      portionsEl.hidden = true;
-      noteEl.hidden = true;
-      listEl.innerHTML = '<li class="empty">' + escape(msg) + "</li>";
-    }
-
-    function render(data) {
-      if (!data || !Array.isArray(data.repas) || data.repas.length === 0) {
-        showEmpty("Aucune recette validée pour le moment.");
-        return;
-      }
-      kickerEl.textContent = data.titre || "À table";
-      portionsEl.hidden = false;
-      noteEl.hidden = false;
-
-      var html = data.repas.map(function (m, i) {
-        var delay = (0.06 * i + 0.05).toFixed(2);
-        return (
-          '<li class="meal" style="animation-delay:' + delay + 's">' +
-            '<div class="meal__plat">' + escape(m.plat || "") + "</div>" +
-            '<div class="meal__portions">' + escape(m.portions || "") + "</div>" +
-            (Array.isArray(m.items) && m.items.length
-              ? renderItems(m.items)
-              : (m.detail
-                  ? renderItems(String(m.detail).split("·").map(function (t) {
-                      return { pilier: "extra", texte: t.trim() };
-                    }))
-                  : "")) +
-            renderRecette(m.recette, i) +
-          "</li>"
-        );
-      }).join("");
-      listEl.innerHTML = html;
-    }
-
-    fetch("menu.json", { cache: "no-store" })
-      .then(function (r) {
-        if (!r.ok) throw new Error("http " + r.status);
-        return r.json();
-      })
-      .then(render)
-      .catch(function () {
-        // Keep the HTML recipes visible when the JSON request fails.
-      });
-  })();
-</script>
 </body>
 </html>
