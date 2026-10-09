@@ -323,6 +323,9 @@
     transition: max-height 0.38s cubic-bezier(0.22, 1, 0.36, 1);
   }
   .recipe.open { max-height: 1800px; }
+  /* Static fallback: readable even when scripts or JSON fetching are unavailable. */
+  details.recipe[open] { max-height: none; overflow: visible; }
+  details.recipe summary { cursor: pointer; color: var(--accent); font-weight: 600; }
 
   .recipe__steps {
     list-style: none;
@@ -382,7 +385,73 @@
       <a class="tab-btn" href="instructions.html">Instructions pour Claude</a>
     </nav>
 
-    <ul class="meals" id="meals"></ul>
+    <ul class="meals" id="meals">
+      <li class="meal">
+        <h2 class="meal__plat">Poulet paprika-citron, brocoli et riz gluant</h2>
+        <div class="meal__portions">2 dîners · 1 personne</div>
+        <ul class="meal__items">
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥩</span><span><span class="nom">poulet</span> <span class="qte">300 g</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥬</span><span><span class="nom">brocoli frais</span> <span class="qte">1 tête (environ 400–500 g)</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🌾</span><span><span class="nom">riz gluant</span> <span class="qte">150 g sec</span></span></li>
+          <li class="meal__item"><span class="pill pill--extra" aria-hidden="true">·</span><span><span class="nom">citron</span> <span class="qte">½</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥑</span><span><span class="nom">huile d’olive</span> <span class="qte">15 ml</span></span></li>
+          <li class="meal__item"><span class="pill pill--extra" aria-hidden="true">·</span><span><span class="nom">paprika fumé</span> <span class="qte">1 c. à café</span></span></li>
+        </ul>
+        <details class="recipe" open>
+          <summary>Voir la recette</summary>
+          <ol class="recipe__steps">
+            <li class="recipe__step"><span class="recipe__step-label">Cuire le riz</span><span class="recipe__step-detail">Rincer le riz. Le faire tremper si le paquet le demande, puis le cuire selon ses indications : porter à ébullition, baisser le feu et couvrir si indiqué.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Préparer</span><span class="recipe__step-detail">Couper le brocoli en petites fleurettes et le poulet en morceaux réguliers. Prélever le jus du demi-citron.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Cuire le brocoli</span><span class="recipe__step-detail">Chauffer 5 ml d’huile à feu moyen dans une poêle. Cuire le brocoli environ 8–10 min en remuant régulièrement, jusqu’à ce qu’une fourchette y entre facilement. Le retirer.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Cuire le poulet</span><span class="recipe__step-detail">Verser les 10 ml d’huile restants dans la poêle. Cuire le poulet à feu moyen environ 8–12 min en retournant les morceaux ; ajouter le paprika pendant la dernière minute. Vérifier le morceau le plus épais : cœur entièrement cuit, sans partie rosée, idéalement 74 °C à cœur. Remettre le brocoli et ajouter le citron hors du feu.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Répartir</span><span class="recipe__step-detail">Servir la moitié avec la moitié du riz ; mettre l’autre moitié dans un tupperware.</span></li>
+          </ol>
+        </details>
+      </li>
+      <li class="meal">
+        <h2 class="meal__plat">Œufs à la tomate, poivron et feta</h2>
+        <div class="meal__portions">2 dîners · 1 personne</div>
+        <ul class="meal__items">
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥩</span><span><span class="nom">œufs</span> <span class="qte">4</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥬</span><span><span class="nom">poivron frais</span> <span class="qte">1</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥬</span><span><span class="nom">polpa</span> <span class="qte">400 g</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥩</span><span><span class="nom">feta</span> <span class="qte">100 g</span></span></li>
+          <li class="meal__item"><span class="pill pill--extra" aria-hidden="true">·</span><span><span class="nom">cumin moulu</span> <span class="qte">1 c. à café</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥑</span><span><span class="nom">huile d’olive</span> <span class="qte">15 ml</span></span></li>
+        </ul>
+        <details class="recipe" open>
+          <summary>Voir la recette</summary>
+          <ol class="recipe__steps">
+            <li class="recipe__step"><span class="recipe__step-label">Préparer</span><span class="recipe__step-detail">Épépiner et couper le poivron en petits morceaux ; émietter la feta.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Cuire le poivron</span><span class="recipe__step-detail">Chauffer l’huile à feu moyen dans une poêle. Ajouter le poivron et cuire environ 6–8 min en remuant, jusqu’à ce qu’il ramollisse.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Faire la sauce</span><span class="recipe__step-detail">Ajouter la polpa et le cumin. Mélanger, puis laisser frémir à feu doux environ 8–10 min, sans couvercle, en remuant de temps en temps : la sauce doit épaissir légèrement.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Cuire les œufs</span><span class="recipe__step-detail">Former quatre creux dans la sauce, y casser les œufs, couvrir et cuire à feu doux environ 5–8 min, jusqu’à ce que blancs et jaunes soient pris. Répartir la feta dessus.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Répartir</span><span class="recipe__step-detail">Servir deux œufs et la moitié de la sauce ; mettre le reste dans un tupperware.</span></li>
+          </ol>
+        </details>
+      </li>
+      <li class="meal">
+        <h2 class="meal__plat">Pâtes complètes au maquereau et à la courgette</h2>
+        <div class="meal__portions">2 dîners · 1 personne</div>
+        <ul class="meal__items">
+          <li class="meal__item"><span class="pill" aria-hidden="true">🌾</span><span><span class="nom">pâtes complètes</span> <span class="qte">160 g sèches</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥩</span><span><span class="nom">maquereau</span> <span class="qte">2 boîtes de 125 g (environ 180 g de poisson estimés, poids égoutté non confirmé)</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥬</span><span><span class="nom">courgette</span> <span class="qte">1</span></span></li>
+          <li class="meal__item"><span class="pill pill--extra" aria-hidden="true">·</span><span><span class="nom">citron</span> <span class="qte">½</span></span></li>
+          <li class="meal__item"><span class="pill" aria-hidden="true">🥑</span><span><span class="nom">huile d’olive</span> <span class="qte">15 ml</span></span></li>
+        </ul>
+        <details class="recipe" open>
+          <summary>Voir la recette</summary>
+          <ol class="recipe__steps">
+            <li class="recipe__step"><span class="recipe__step-label">Cuire les pâtes</span><span class="recipe__step-detail">Porter une casserole d’eau à ébullition. Cuire les pâtes selon le temps indiqué sur le paquet, puis les égoutter.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Préparer</span><span class="recipe__step-detail">Couper la courgette en petits morceaux ; ouvrir les boîtes de maquereau et prélever le jus du demi-citron.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Cuire la courgette</span><span class="recipe__step-detail">Chauffer l’huile à feu moyen dans une poêle. Cuire la courgette environ 7–10 min en remuant régulièrement, jusqu’à ce qu’elle soit tendre.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Assembler</span><span class="recipe__step-detail">Ajouter les pâtes et le maquereau ; mélanger doucement à feu doux 1–2 min, jusqu’à ce que le tout soit chaud. Couper le feu et ajouter le citron.</span></li>
+            <li class="recipe__step"><span class="recipe__step-label">Répartir</span><span class="recipe__step-detail">Servir la moitié ; mettre l’autre moitié dans un tupperware.</span></li>
+          </ol>
+        </details>
+      </li>
+    </ul>
 
     <section class="portions" id="portions" aria-label="Rappel des portions">
       <h2>Rappel des portions</h2>
@@ -522,7 +591,7 @@
       })
       .then(render)
       .catch(function () {
-        showEmpty("Recettes indisponibles. Réessaie plus tard.");
+        // Keep the HTML recipes visible when the JSON request fails.
       });
   })();
 </script>
