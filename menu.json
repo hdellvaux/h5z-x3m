@@ -2,58 +2,63 @@
   "titre": "Trois recettes à faire quand je veux",
   "repas": [
     {
-      "plat": "Poulet paprika-citron, brocoli et riz gluant",
+      "plat": "Pâtes complètes au brocoli et saumon fumé",
       "portions": "2 dîners · 1 personne",
       "items": [
-        { "pilier": "proteine", "nom": "poulet", "qte": "300 g" },
-        { "pilier": "legume", "nom": "brocoli frais", "qte": "1 tête (environ 400–500 g)" },
-        { "pilier": "glucide", "nom": "riz gluant", "qte": "150 g sec" },
-        { "pilier": "extra", "nom": "citron", "qte": "½" },
-        { "pilier": "gras", "nom": "huile d’olive", "qte": "15 ml" },
-        { "pilier": "extra", "nom": "paprika fumé", "qte": "1 c. à café" }
+        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "180 g sèches" },
+        { "pilier": "legume", "nom": "brocoli surgelé", "qte": "300 g" },
+        { "pilier": "proteine", "nom": "saumon fumé", "qte": "150 g" },
+        { "pilier": "extra", "nom": "yaourt nature", "qte": "125 g" },
+        { "pilier": "extra", "nom": "citron", "qte": "1" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 c. à café" },
+        { "pilier": "extra", "nom": "sel", "qte": "selon goût" },
+        { "pilier": "extra", "nom": "poivre", "qte": "selon goût" }
       ],
       "recette": [
-        { "etape": "Cuire le riz", "detail": "Rincer le riz. Le faire tremper si le paquet le demande, puis le cuire selon ses indications : porter à ébullition, baisser le feu et couvrir si indiqué." },
-        { "etape": "Préparer", "detail": "Couper le brocoli en petites fleurettes et le poulet en morceaux réguliers. Prélever le jus du demi-citron." },
-        { "etape": "Cuire le brocoli", "detail": "Chauffer 5 ml d’huile à feu moyen dans une poêle. Cuire le brocoli environ 8–10 min en remuant régulièrement, jusqu’à ce qu’une fourchette y entre facilement. Le retirer." },
-        { "etape": "Cuire le poulet", "detail": "Verser les 10 ml d’huile restants dans la poêle. Cuire le poulet à feu moyen environ 8–12 min en retournant les morceaux ; ajouter le paprika pendant la dernière minute. Vérifier le morceau le plus épais : cœur entièrement cuit, sans partie rosée, idéalement 74 °C à cœur. Remettre le brocoli et ajouter le citron hors du feu." },
-        { "etape": "Répartir", "detail": "Servir la moitié avec la moitié du riz ; mettre l’autre moitié dans un tupperware." }
+        { "etape": "Préparer", "detail": "Presser le citron et couper le saumon en lanières. Mélanger le yaourt avec la moitié du jus et le poivre ; goûter avant d’ajouter du sel, car le saumon est déjà salé." },
+        { "etape": "Cuire", "detail": "Porter une casserole d’eau à ébullition. Cuire les pâtes selon le paquet ; ajouter le brocoli encore surgelé dans la même eau pour les 5 dernières minutes. Égoutter quand les pâtes et le brocoli sont tendres." },
+        { "etape": "Assembler", "detail": "Chauffer l’huile à feu doux dans la casserole vide. Remettre pâtes et brocoli et remuer 1 minute. Couper le feu ; ajouter la sauce au yaourt, le saumon et le reste du jus de citron. Mélanger doucement sans faire bouillir." },
+        { "etape": "Répartir", "detail": "Servir la moitié ; mettre l’autre moitié dans un tupperware." }
       ]
     },
     {
-      "plat": "Œufs à la tomate, poivron et feta",
+      "plat": "Chakchouka aux œufs, tomates et poivron",
       "portions": "2 dîners · 1 personne",
       "items": [
         { "pilier": "proteine", "nom": "œufs", "qte": "4" },
-        { "pilier": "legume", "nom": "poivron frais", "qte": "1" },
-        { "pilier": "legume", "nom": "polpa", "qte": "400 g" },
-        { "pilier": "proteine", "nom": "feta", "qte": "100 g" },
+        { "pilier": "legume", "nom": "tomates", "qte": "4 (environ 500 g)" },
+        { "pilier": "legume", "nom": "poivron", "qte": "1" },
+        { "pilier": "legume", "nom": "oignon", "qte": "1" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 c. à soupe" },
         { "pilier": "extra", "nom": "cumin moulu", "qte": "1 c. à café" },
-        { "pilier": "gras", "nom": "huile d’olive", "qte": "15 ml" }
+        { "pilier": "extra", "nom": "paprika fumé", "qte": "1 c. à café" },
+        { "pilier": "extra", "nom": "sel", "qte": "selon goût" },
+        { "pilier": "extra", "nom": "poivre", "qte": "selon goût" }
       ],
       "recette": [
-        { "etape": "Préparer", "detail": "Épépiner et couper le poivron en petits morceaux ; émietter la feta." },
-        { "etape": "Cuire le poivron", "detail": "Chauffer l’huile à feu moyen dans une poêle. Ajouter le poivron et cuire environ 6–8 min en remuant, jusqu’à ce qu’il ramollisse." },
-        { "etape": "Faire la sauce", "detail": "Ajouter la polpa et le cumin. Mélanger, puis laisser frémir à feu doux environ 8–10 min, sans couvercle, en remuant de temps en temps : la sauce doit épaissir légèrement." },
-        { "etape": "Cuire les œufs", "detail": "Former quatre creux dans la sauce, y casser les œufs, couvrir et cuire à feu doux environ 5–8 min, jusqu’à ce que blancs et jaunes soient pris. Répartir la feta dessus." },
-        { "etape": "Répartir", "detail": "Servir deux œufs et la moitié de la sauce ; mettre le reste dans un tupperware." }
+        { "etape": "Préparer", "detail": "Éplucher et émincer l’oignon. Épépiner et couper le poivron en petits dés ; couper les tomates en morceaux." },
+        { "etape": "Cuire les légumes", "detail": "Chauffer l’huile à feu moyen dans une grande poêle avec couvercle. Ajouter l’oignon et le poivron ; remuer environ 6–8 minutes, jusqu’à ce qu’ils ramollissent." },
+        { "etape": "Faire la sauce", "detail": "Ajouter les tomates, le cumin, le paprika fumé, le sel et le poivre. Mélanger, puis laisser frémir à feu doux sans couvercle environ 10–15 minutes, en remuant parfois, jusqu’à obtenir une sauce épaisse." },
+        { "etape": "Cuire les œufs", "detail": "Former quatre creux dans la sauce et y casser les œufs. Couvrir et cuire à feu doux environ 6–9 minutes, jusqu’à ce que les blancs soient entièrement pris." },
+        { "etape": "Répartir", "detail": "Servir deux œufs et la moitié de la sauce ; mettre les deux autres œufs et le reste de la sauce dans un tupperware." }
       ]
     },
     {
-      "plat": "Pâtes complètes au maquereau et à la courgette",
+      "plat": "Tofu fumé à la courgette, sauce soja et gingembre",
       "portions": "2 dîners · 1 personne",
       "items": [
-        { "pilier": "glucide", "nom": "pâtes complètes", "qte": "160 g sèches" },
-        { "pilier": "proteine", "nom": "maquereau", "qte": "2 boîtes de 125 g (environ 180 g de poisson estimés, poids égoutté non confirmé)" },
+        { "pilier": "proteine", "nom": "tofu fumé", "qte": "200 g" },
         { "pilier": "legume", "nom": "courgette", "qte": "1" },
-        { "pilier": "extra", "nom": "citron", "qte": "½" },
-        { "pilier": "gras", "nom": "huile d’olive", "qte": "15 ml" }
+        { "pilier": "legume", "nom": "oignon", "qte": "1" },
+        { "pilier": "extra", "nom": "sauce soja réduite en sel", "qte": "2 c. à soupe" },
+        { "pilier": "extra", "nom": "gingembre moulu", "qte": "1 c. à café" },
+        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 c. à soupe" }
       ],
       "recette": [
-        { "etape": "Cuire les pâtes", "detail": "Porter une casserole d’eau à ébullition. Cuire les pâtes selon le temps indiqué sur le paquet, puis les égoutter." },
-        { "etape": "Préparer", "detail": "Couper la courgette en petits morceaux ; ouvrir les boîtes de maquereau et prélever le jus du demi-citron." },
-        { "etape": "Cuire la courgette", "detail": "Chauffer l’huile à feu moyen dans une poêle. Cuire la courgette environ 7–10 min en remuant régulièrement, jusqu’à ce qu’elle soit tendre." },
-        { "etape": "Assembler", "detail": "Ajouter les pâtes et le maquereau ; mélanger doucement à feu doux 1–2 min, jusqu’à ce que le tout soit chaud. Couper le feu et ajouter le citron." },
+        { "etape": "Préparer", "detail": "Éplucher et émincer l’oignon. Couper la courgette en petits dés et le tofu fumé en cubes." },
+        { "etape": "Cuire les légumes", "detail": "Chauffer l’huile à feu moyen dans une poêle. Ajouter l’oignon et la courgette ; remuer souvent environ 8–10 minutes, jusqu’à ce que la courgette soit tendre et légèrement dorée." },
+        { "etape": "Réchauffer le tofu", "detail": "Ajouter le tofu et le gingembre moulu ; remuer à feu moyen environ 3–4 minutes, jusqu’à ce que le tofu soit bien chaud." },
+        { "etape": "Assaisonner", "detail": "Verser la sauce soja réduite en sel ; remuer 1 minute à feu doux pour enrober les morceaux, puis couper le feu." },
         { "etape": "Répartir", "detail": "Servir la moitié ; mettre l’autre moitié dans un tupperware." }
       ]
     }
