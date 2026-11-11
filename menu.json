@@ -1,98 +1,560 @@
 {
-  "precedent": null,
+  "precedent": {
+    "titre": "Trois nouvelles recettes et le tofu à cuisiner",
+    "repas": [
+      {
+        "plat": "Poulet citron–paprika fumé, brocoli, poivron et riz complet",
+        "portions": "2 dîners · 1 personne",
+        "items": [
+          {
+            "pilier": "proteine",
+            "nom": "poulet",
+            "qte": "300 g crus"
+          },
+          {
+            "pilier": "glucide",
+            "nom": "riz complet",
+            "qte": "140 g secs"
+          },
+          {
+            "pilier": "legume",
+            "nom": "brocoli",
+            "qte": "300 g"
+          },
+          {
+            "pilier": "legume",
+            "nom": "poivron frais",
+            "qte": "1"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive",
+            "qte": "20 ml"
+          },
+          {
+            "pilier": "extra",
+            "nom": "citron",
+            "qte": "½"
+          },
+          {
+            "pilier": "extra",
+            "nom": "paprika fumé",
+            "qte": "2 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "poivre",
+            "qte": "0,3 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sel",
+            "qte": "1 g"
+          }
+        ],
+        "recette": [
+          {
+            "etape": "Préparer",
+            "detail": "Presser le demi-citron. Laver le poivron, retirer graines et pédoncule, puis le couper en lanières. Séparer le brocoli en petits bouquets ; s’il est surgelé, le garder surgelé. Couper le poulet en morceaux de 2 cm sur une planche séparée ; laver mains, couteau et planche après le poulet cru."
+          },
+          {
+            "etape": "Cuire le riz",
+            "detail": "Porter une casserole d’eau à ébullition, ajouter le riz et cuire à petits bouillons sans couvercle selon le paquet, environ 25–35 minutes. Goûter : les grains doivent être tendres ; égoutter."
+          },
+          {
+            "etape": "Cuire les légumes",
+            "detail": "Pendant le riz, chauffer 10 ml d’huile à feu moyen dans une grande poêle. Ajouter le poivron ; remuer 5 minutes. Ajouter le brocoli et 3 cuillères à soupe d’eau, couvrir et cuire 6–10 minutes à feu moyen-doux, en remuant à mi-cuisson, jusqu’à ce qu’une fourchette entre facilement. Retirer le couvercle, laisser évaporer l’eau et réserver les légumes dans une assiette propre."
+          },
+          {
+            "etape": "Cuire le poulet",
+            "detail": "Dans la même poêle, chauffer les 10 ml d’huile restants à feu moyen. Ajouter le poulet ; cuire environ 8–12 minutes en retournant souvent. Mesurer au cœur du plus gros morceau : au moins 75 °C ; sans thermomètre, ouvrir le plus gros morceau : chair entièrement opaque et fumante, sans partie rosée ou translucide, puis prolonger au moindre doute. Baisser à feu doux, ajouter les légumes, le paprika fumé, le sel, le poivre et le jus du demi-citron ; remuer 1 minute."
+          },
+          {
+            "etape": "Répartir",
+            "detail": "Servir la moitié du riz et du poulet aux légumes ; mettre l’autre moitié dans un tupperware."
+          }
+        ]
+      },
+      {
+        "plat": "Penne complètes aux épinards, tomates, feta et citron",
+        "portions": "2 dîners · 1 personne",
+        "items": [
+          {
+            "pilier": "glucide",
+            "nom": "penne complètes",
+            "qte": "160 g sèches"
+          },
+          {
+            "pilier": "legume",
+            "nom": "épinards frais",
+            "qte": "200 g"
+          },
+          {
+            "pilier": "legume",
+            "nom": "tomates fraîches",
+            "qte": "300 g"
+          },
+          {
+            "pilier": "proteine",
+            "nom": "feta",
+            "qte": "150 g"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive",
+            "qte": "15 ml"
+          },
+          {
+            "pilier": "extra",
+            "nom": "citron",
+            "qte": "½"
+          },
+          {
+            "pilier": "extra",
+            "nom": "poivre",
+            "qte": "0,3 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sel pour l’eau des pâtes",
+            "qte": "5 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "eau de cuisson des pâtes réservée",
+            "qte": "100 ml"
+          }
+        ],
+        "recette": [
+          {
+            "etape": "Préparer",
+            "detail": "Laver les tomates et les couper en petits dés. Laver les épinards et les égoutter. Émietter la feta et presser le demi-citron."
+          },
+          {
+            "etape": "Cuire les penne",
+            "detail": "Porter environ 2 litres d’eau à ébullition, ajouter les 5 g de sel puis les penne. Cuire à petits bouillons sans couvercle selon le paquet, en remuant au début puis parfois. Quand elles sont tendres mais encore légèrement fermes, prélever 100 ml d’eau de cuisson avec une tasse avant d’égoutter."
+          },
+          {
+            "etape": "Cuire les légumes",
+            "detail": "Pendant les pâtes, chauffer l’huile à feu moyen dans une grande poêle. Ajouter les tomates ; remuer 5–7 minutes sans couvercle, jusqu’à ce qu’elles rendent leur jus et ramollissent. Ajouter les épinards en deux fois ; remuer 2–3 minutes jusqu’à ce que toutes les feuilles soient retombées."
+          },
+          {
+            "etape": "Lier la sauce",
+            "detail": "Baisser à feu doux. Ajouter les penne, les 100 ml d’eau de cuisson, la feta et le poivre ; remuer 1–2 minutes pour que la feta se mêle au jus et enrobe les pâtes. Couper le feu, ajouter le jus du demi-citron et mélanger ; ne pas ajouter de sel, déjà présent dans l’eau et la feta."
+          },
+          {
+            "etape": "Répartir",
+            "detail": "Servir la moitié ; mettre l’autre moitié dans un tupperware."
+          }
+        ]
+      },
+      {
+        "plat": "Merlu citron–aneth au four, patate douce rôtie et mâche",
+        "portions": "2 dîners · 1 personne",
+        "items": [
+          {
+            "pilier": "proteine",
+            "nom": "merlu non fumé avec peau",
+            "qte": "320 g crus utiles"
+          },
+          {
+            "pilier": "legume",
+            "nom": "patate douce fraîche",
+            "qte": "500 g"
+          },
+          {
+            "pilier": "legume",
+            "nom": "mâche",
+            "qte": "100 g"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive pour le poisson",
+            "qte": "10 ml"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive pour la patate douce",
+            "qte": "15 ml"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive pour la mâche",
+            "qte": "10 ml"
+          },
+          {
+            "pilier": "extra",
+            "nom": "citron",
+            "qte": "½"
+          },
+          {
+            "pilier": "extra",
+            "nom": "aneth séché",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "poivre pour le poisson",
+            "qte": "0,3 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "poivre pour la patate douce",
+            "qte": "0,2 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sel pour le poisson",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sel pour la patate douce",
+            "qte": "0,5 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "vinaigre alimentaire",
+            "qte": "5 ml"
+          }
+        ],
+        "recette": [
+          {
+            "etape": "Préparer",
+            "detail": "Préchauffer le four à 200 °C, chaleur tournante. Laver, éplucher et couper la patate douce en cubes de 2 cm. Mélanger avec ses 15 ml d’huile, 0,5 g de sel et 0,2 g de poivre ; étaler en une seule couche dans un grand plat. Laver et essorer la mâche. Presser le demi-citron."
+          },
+          {
+            "etape": "Rôtir la patate douce",
+            "detail": "Enfourner d’abord la patate douce seule pour environ 30–40 minutes ; retourner à mi-cuisson. Elle doit être légèrement dorée et une fourchette doit entrer sans résistance. Si elle est encore ferme, prolonger avant d’ajouter le poisson."
+          },
+          {
+            "etape": "Préparer le merlu",
+            "detail": "Pendant la fin de cuisson de la patate douce, vérifier les arêtes du merlu et les retirer. Mettre les morceaux dans un second plat, peau dessous. Répartir ses 10 ml d’huile, le jus du demi-citron, l’aneth séché, 1 g de sel et 0,3 g de poivre. Laver mains et ustensiles après le poisson cru."
+          },
+          {
+            "etape": "Cuire le merlu",
+            "detail": "Quand la patate douce est tendre, baisser le four à 180 °C et enfourner le poisson ; laisser la patate douce dans le four pour la garder chaude. Repères indicatifs : 10–15 minutes pour 1–2 cm d’épaisseur, 15–20 minutes pour 2–3 cm ; contrôler tôt et prolonger par tranches de 2–3 minutes si nécessaire. Au centre du morceau le plus épais, atteindre au moins 63 °C : chair opaque qui se détache facilement à la fourchette, sans centre translucide. Ces temps sont une adaptation au four, pas une consigne de l’étiquette commerciale."
+          },
+          {
+            "etape": "Répartir",
+            "detail": "Mélanger les 10 ml d’huile et les 5 ml de vinaigre pour la mâche. Servir la moitié du poisson avec son jus et la moitié de la patate douce ; assaisonner la moitié de la mâche avec la moitié de la vinaigrette. Mettre l’autre portion dans un tupperware en séparant la mâche et le reste de vinaigrette pour ne les mélanger qu’au moment de manger."
+          }
+        ]
+      },
+      {
+        "plat": "Tofu fumé à la courgette, sauce soja et gingembre",
+        "portions": "2 dîners · 1 personne",
+        "items": [
+          {
+            "pilier": "proteine",
+            "nom": "tofu fumé",
+            "qte": "200 g"
+          },
+          {
+            "pilier": "legume",
+            "nom": "courgette",
+            "qte": "1"
+          },
+          {
+            "pilier": "legume",
+            "nom": "oignon",
+            "qte": "1"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sauce soja réduite en sel",
+            "qte": "2 c. à soupe"
+          },
+          {
+            "pilier": "extra",
+            "nom": "gingembre moulu",
+            "qte": "1 c. à café"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive",
+            "qte": "1 c. à soupe"
+          }
+        ],
+        "recette": [
+          {
+            "etape": "Préparer",
+            "detail": "Éplucher et émincer l’oignon. Couper la courgette en petits dés et le tofu fumé en cubes."
+          },
+          {
+            "etape": "Cuire les légumes",
+            "detail": "Chauffer l’huile à feu moyen dans une poêle. Ajouter l’oignon et la courgette ; remuer souvent environ 8–10 minutes, jusqu’à ce que la courgette soit tendre et légèrement dorée."
+          },
+          {
+            "etape": "Réchauffer le tofu",
+            "detail": "Ajouter le tofu et le gingembre moulu ; remuer à feu moyen environ 3–4 minutes, jusqu’à ce que le tofu soit bien chaud."
+          },
+          {
+            "etape": "Assaisonner",
+            "detail": "Verser la sauce soja réduite en sel ; remuer 1 minute à feu doux pour enrober les morceaux, puis couper le feu."
+          },
+          {
+            "etape": "Répartir",
+            "detail": "Servir la moitié ; mettre l’autre moitié dans un tupperware."
+          }
+        ]
+      }
+    ]
+  },
   "dernier": {
-  "titre": "Trois nouvelles recettes et le tofu à cuisiner",
-  "repas": [
-    {
-      "plat": "Poulet citron–paprika fumé, brocoli, poivron et riz complet",
-      "portions": "2 dîners · 1 personne",
-      "items": [
-        {"pilier": "proteine", "nom": "poulet", "qte": "300 g crus"},
-        {"pilier": "glucide", "nom": "riz complet", "qte": "140 g secs"},
-        {"pilier": "legume", "nom": "brocoli", "qte": "300 g"},
-        {"pilier": "legume", "nom": "poivron frais", "qte": "1"},
-        {"pilier": "gras", "nom": "huile d’olive", "qte": "20 ml"},
-        {"pilier": "extra", "nom": "citron", "qte": "½"},
-        {"pilier": "extra", "nom": "paprika fumé", "qte": "2 g"},
-        {"pilier": "extra", "nom": "poivre", "qte": "0,3 g"},
-        {"pilier": "extra", "nom": "sel", "qte": "1 g"}
-      ],
-      "recette": [
-        {"etape": "Préparer", "detail": "Presser le demi-citron. Laver le poivron, retirer graines et pédoncule, puis le couper en lanières. Séparer le brocoli en petits bouquets ; s’il est surgelé, le garder surgelé. Couper le poulet en morceaux de 2 cm sur une planche séparée ; laver mains, couteau et planche après le poulet cru."},
-        {"etape": "Cuire le riz", "detail": "Porter une casserole d’eau à ébullition, ajouter le riz et cuire à petits bouillons sans couvercle selon le paquet, environ 25–35 minutes. Goûter : les grains doivent être tendres ; égoutter."},
-        {"etape": "Cuire les légumes", "detail": "Pendant le riz, chauffer 10 ml d’huile à feu moyen dans une grande poêle. Ajouter le poivron ; remuer 5 minutes. Ajouter le brocoli et 3 cuillères à soupe d’eau, couvrir et cuire 6–10 minutes à feu moyen-doux, en remuant à mi-cuisson, jusqu’à ce qu’une fourchette entre facilement. Retirer le couvercle, laisser évaporer l’eau et réserver les légumes dans une assiette propre."},
-        {"etape": "Cuire le poulet", "detail": "Dans la même poêle, chauffer les 10 ml d’huile restants à feu moyen. Ajouter le poulet ; cuire environ 8–12 minutes en retournant souvent. Mesurer au cœur du plus gros morceau : au moins 75 °C ; sans thermomètre, ouvrir le plus gros morceau : chair entièrement opaque et fumante, sans partie rosée ou translucide, puis prolonger au moindre doute. Baisser à feu doux, ajouter les légumes, le paprika fumé, le sel, le poivre et le jus du demi-citron ; remuer 1 minute."},
-        {"etape": "Répartir", "detail": "Servir la moitié du riz et du poulet aux légumes ; mettre l’autre moitié dans un tupperware."}
-      ]
-    },
-    {
-      "plat": "Penne complètes aux épinards, tomates, feta et citron",
-      "portions": "2 dîners · 1 personne",
-      "items": [
-        {"pilier": "glucide", "nom": "penne complètes", "qte": "160 g sèches"},
-        {"pilier": "legume", "nom": "épinards frais", "qte": "200 g"},
-        {"pilier": "legume", "nom": "tomates fraîches", "qte": "300 g"},
-        {"pilier": "proteine", "nom": "feta", "qte": "150 g"},
-        {"pilier": "gras", "nom": "huile d’olive", "qte": "15 ml"},
-        {"pilier": "extra", "nom": "citron", "qte": "½"},
-        {"pilier": "extra", "nom": "poivre", "qte": "0,3 g"},
-        {"pilier": "extra", "nom": "sel pour l’eau des pâtes", "qte": "5 g"},
-        {"pilier": "extra", "nom": "eau de cuisson des pâtes réservée", "qte": "100 ml"}
-      ],
-      "recette": [
-        {"etape": "Préparer", "detail": "Laver les tomates et les couper en petits dés. Laver les épinards et les égoutter. Émietter la feta et presser le demi-citron."},
-        {"etape": "Cuire les penne", "detail": "Porter environ 2 litres d’eau à ébullition, ajouter les 5 g de sel puis les penne. Cuire à petits bouillons sans couvercle selon le paquet, en remuant au début puis parfois. Quand elles sont tendres mais encore légèrement fermes, prélever 100 ml d’eau de cuisson avec une tasse avant d’égoutter."},
-        {"etape": "Cuire les légumes", "detail": "Pendant les pâtes, chauffer l’huile à feu moyen dans une grande poêle. Ajouter les tomates ; remuer 5–7 minutes sans couvercle, jusqu’à ce qu’elles rendent leur jus et ramollissent. Ajouter les épinards en deux fois ; remuer 2–3 minutes jusqu’à ce que toutes les feuilles soient retombées."},
-        {"etape": "Lier la sauce", "detail": "Baisser à feu doux. Ajouter les penne, les 100 ml d’eau de cuisson, la feta et le poivre ; remuer 1–2 minutes pour que la feta se mêle au jus et enrobe les pâtes. Couper le feu, ajouter le jus du demi-citron et mélanger ; ne pas ajouter de sel, déjà présent dans l’eau et la feta."},
-        {"etape": "Répartir", "detail": "Servir la moitié ; mettre l’autre moitié dans un tupperware."}
-      ]
-    },
-    {
-      "plat": "Merlu citron–aneth au four, patate douce rôtie et mâche",
-      "portions": "2 dîners · 1 personne",
-      "items": [
-        {"pilier": "proteine", "nom": "merlu non fumé avec peau", "qte": "320 g crus utiles"},
-        {"pilier": "legume", "nom": "patate douce fraîche", "qte": "500 g"},
-        {"pilier": "legume", "nom": "mâche", "qte": "100 g"},
-        {"pilier": "gras", "nom": "huile d’olive pour le poisson", "qte": "10 ml"},
-        {"pilier": "gras", "nom": "huile d’olive pour la patate douce", "qte": "15 ml"},
-        {"pilier": "gras", "nom": "huile d’olive pour la mâche", "qte": "10 ml"},
-        {"pilier": "extra", "nom": "citron", "qte": "½"},
-        {"pilier": "extra", "nom": "aneth séché", "qte": "1 g"},
-        {"pilier": "extra", "nom": "poivre pour le poisson", "qte": "0,3 g"},
-        {"pilier": "extra", "nom": "poivre pour la patate douce", "qte": "0,2 g"},
-        {"pilier": "extra", "nom": "sel pour le poisson", "qte": "1 g"},
-        {"pilier": "extra", "nom": "sel pour la patate douce", "qte": "0,5 g"},
-        {"pilier": "extra", "nom": "vinaigre alimentaire", "qte": "5 ml"}
-      ],
-      "recette": [
-        {"etape": "Préparer", "detail": "Préchauffer le four à 200 °C, chaleur tournante. Laver, éplucher et couper la patate douce en cubes de 2 cm. Mélanger avec ses 15 ml d’huile, 0,5 g de sel et 0,2 g de poivre ; étaler en une seule couche dans un grand plat. Laver et essorer la mâche. Presser le demi-citron."},
-        {"etape": "Rôtir la patate douce", "detail": "Enfourner d’abord la patate douce seule pour environ 30–40 minutes ; retourner à mi-cuisson. Elle doit être légèrement dorée et une fourchette doit entrer sans résistance. Si elle est encore ferme, prolonger avant d’ajouter le poisson."},
-        {"etape": "Préparer le merlu", "detail": "Pendant la fin de cuisson de la patate douce, vérifier les arêtes du merlu et les retirer. Mettre les morceaux dans un second plat, peau dessous. Répartir ses 10 ml d’huile, le jus du demi-citron, l’aneth séché, 1 g de sel et 0,3 g de poivre. Laver mains et ustensiles après le poisson cru."},
-        {"etape": "Cuire le merlu", "detail": "Quand la patate douce est tendre, baisser le four à 180 °C et enfourner le poisson ; laisser la patate douce dans le four pour la garder chaude. Repères indicatifs : 10–15 minutes pour 1–2 cm d’épaisseur, 15–20 minutes pour 2–3 cm ; contrôler tôt et prolonger par tranches de 2–3 minutes si nécessaire. Au centre du morceau le plus épais, atteindre au moins 63 °C : chair opaque qui se détache facilement à la fourchette, sans centre translucide. Ces temps sont une adaptation au four, pas une consigne de l’étiquette commerciale."},
-        {"etape": "Répartir", "detail": "Mélanger les 10 ml d’huile et les 5 ml de vinaigre pour la mâche. Servir la moitié du poisson avec son jus et la moitié de la patate douce ; assaisonner la moitié de la mâche avec la moitié de la vinaigrette. Mettre l’autre portion dans un tupperware en séparant la mâche et le reste de vinaigrette pour ne les mélanger qu’au moment de manger."}
-      ]
-    },
-    {
-      "plat": "Tofu fumé à la courgette, sauce soja et gingembre",
-      "portions": "2 dîners · 1 personne",
-      "items": [
-        { "pilier": "proteine", "nom": "tofu fumé", "qte": "200 g" },
-        { "pilier": "legume", "nom": "courgette", "qte": "1" },
-        { "pilier": "legume", "nom": "oignon", "qte": "1" },
-        { "pilier": "extra", "nom": "sauce soja réduite en sel", "qte": "2 c. à soupe" },
-        { "pilier": "extra", "nom": "gingembre moulu", "qte": "1 c. à café" },
-        { "pilier": "gras", "nom": "huile d’olive", "qte": "1 c. à soupe" }
-      ],
-      "recette": [
-        { "etape": "Préparer", "detail": "Éplucher et émincer l’oignon. Couper la courgette en petits dés et le tofu fumé en cubes." },
-        { "etape": "Cuire les légumes", "detail": "Chauffer l’huile à feu moyen dans une poêle. Ajouter l’oignon et la courgette ; remuer souvent environ 8–10 minutes, jusqu’à ce que la courgette soit tendre et légèrement dorée." },
-        { "etape": "Réchauffer le tofu", "detail": "Ajouter le tofu et le gingembre moulu ; remuer à feu moyen environ 3–4 minutes, jusqu’à ce que le tofu soit bien chaud." },
-        { "etape": "Assaisonner", "detail": "Verser la sauce soja réduite en sel ; remuer 1 minute à feu doux pour enrober les morceaux, puis couper le feu." },
-        { "etape": "Répartir", "detail": "Servir la moitié ; mettre l’autre moitié dans un tupperware." }
-      ]
-    }
-  ]
-},
+    "titre": "Trois recettes à faire quand je veux",
+    "repas": [
+      {
+        "plat": "Saumon en croûte chapelure–aneth, boulgour et courgette",
+        "portions": "2 dîners · 1 personne",
+        "items": [
+          {
+            "pilier": "proteine",
+            "nom": "saumon sans peau",
+            "qte": "300 g crus"
+          },
+          {
+            "pilier": "glucide",
+            "nom": "boulgour",
+            "qte": "140 g secs"
+          },
+          {
+            "pilier": "legume",
+            "nom": "courgette",
+            "qte": "400 g"
+          },
+          {
+            "pilier": "glucide",
+            "nom": "chapelure",
+            "qte": "30 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "aneth séché",
+            "qte": "2 g"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive",
+            "qte": "15 ml"
+          },
+          {
+            "pilier": "extra",
+            "nom": "citron",
+            "qte": "1"
+          },
+          {
+            "pilier": "extra",
+            "nom": "moutarde",
+            "qte": "10 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sel",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "poivre",
+            "qte": "0,5 g"
+          }
+        ],
+        "recette": [
+          {
+            "etape": "Préparer",
+            "detail": "Préchauffer le four à 200 °C, chaleur tournante. Laver la courgette, retirer ses extrémités et la couper en demi-rondelles de 1 cm. Laver le citron, prélever finement son zeste jaune sans la partie blanche et presser son jus. Mélanger la chapelure, l’aneth, le zeste et 5 ml d’huile."
+          },
+          {
+            "etape": "Démarrer les courgettes",
+            "detail": "Dans un grand plat, mélanger la courgette avec les 10 ml d’huile restants, 0,5 g de sel et 0,25 g de poivre. Étaler en une seule couche et enfourner 10 minutes ; remuer à mi-cuisson."
+          },
+          {
+            "etape": "Cuire le boulgour",
+            "detail": "Pendant ce temps, porter une casserole d’eau à ébullition. Ajouter le boulgour et cuire à petits bouillons, sans couvercle, selon le paquet, environ 10–15 minutes. Goûter : les grains doivent être tendres ; égoutter."
+          },
+          {
+            "etape": "Cuire le saumon",
+            "detail": "Vérifier et retirer les arêtes du saumon sans peau, puis le déposer dans un second plat. Répartir la moutarde, les 0,5 g de sel et 0,25 g de poivre restants, puis le mélange de chapelure en appuyant légèrement. Laver mains et ustensiles après le poisson cru. Enfourner avec les courgettes pour environ 12–18 minutes selon l’épaisseur ; remuer les courgettes une fois. Le saumon doit atteindre au moins 63 °C au centre du morceau le plus épais, avec une chair opaque qui se détache à la fourchette, sans centre translucide ; prolonger si nécessaire. Les courgettes sont prêtes quand une fourchette entre facilement."
+          },
+          {
+            "etape": "Répartir",
+            "detail": "Verser la moitié du jus de citron dans le boulgour et l’autre moitié sur les courgettes ; mélanger. Servir la moitié du saumon, du boulgour et des courgettes ; mettre l’autre moitié dans un tupperware."
+          }
+        ]
+      },
+      {
+        "plat": "Curry de lentilles vertes aux épinards, riz complet et yaourt nature",
+        "portions": "2 dîners · 1 personne",
+        "items": [
+          {
+            "pilier": "proteine",
+            "nom": "lentilles vertes",
+            "qte": "160 g sèches"
+          },
+          {
+            "pilier": "glucide",
+            "nom": "riz complet",
+            "qte": "120 g secs"
+          },
+          {
+            "pilier": "legume",
+            "nom": "épinards surgelés nature",
+            "qte": "300 g"
+          },
+          {
+            "pilier": "legume",
+            "nom": "oignon",
+            "qte": "1"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive",
+            "qte": "15 ml"
+          },
+          {
+            "pilier": "extra",
+            "nom": "cumin moulu",
+            "qte": "2 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "curcuma moulu",
+            "qte": "2 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "gingembre moulu",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "feuilles de coriandre séchées",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "proteine",
+            "nom": "yaourt nature",
+            "qte": "125 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sel",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "poivre",
+            "qte": "0,5 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "eau pour les lentilles",
+            "qte": "500 ml au départ, à ajuster pendant la cuisson"
+          }
+        ],
+        "recette": [
+          {
+            "etape": "Préparer",
+            "detail": "Prévoir environ 45–60 minutes au total, davantage si les lentilles restent fermes. Éplucher et couper l’oignon en petits dés. Rincer les lentilles dans une passoire et retirer les éventuels petits débris."
+          },
+          {
+            "etape": "Démarrer le curry",
+            "detail": "Chauffer l’huile à feu moyen dans une casserole. Ajouter l’oignon et remuer environ 5 minutes, jusqu’à ce qu’il soit tendre et translucide. Baisser à feu doux, ajouter le cumin, le curcuma, le gingembre et les feuilles de coriandre séchées ; remuer 30 secondes sans laisser noircir. Ajouter immédiatement les lentilles et les 500 ml d’eau."
+          },
+          {
+            "etape": "Cuire lentilles et riz",
+            "detail": "Porter les lentilles à ébullition, puis baisser à feu doux et couvrir partiellement. Laisser frémir environ 35–45 minutes en remuant toutes les 10 minutes ; ajouter un peu d’eau si elles ne sont plus immergées et restent fermes. Goûter : elles doivent être tendres, sans cœur dur ; prolonger si nécessaire. Pendant cette cuisson, porter une autre casserole d’eau à ébullition, ajouter le riz et cuire à petits bouillons sans couvercle selon le paquet, environ 25–35 minutes, jusqu’à ce qu’il soit tendre ; égoutter."
+          },
+          {
+            "etape": "Ajouter les épinards",
+            "detail": "Quand les lentilles sont tendres, ajouter les épinards encore surgelés, le sel et le poivre. Cuire à feu moyen-doux environ 8–10 minutes, ou selon le temps indiqué sur leur paquet, en remuant et en séparant les blocs à la cuillère. Ils doivent être entièrement décongelés et bien chauds partout. Si le curry accroche, ajouter un peu d’eau ; s’il est trop liquide, laisser frémir sans couvercle en remuant jusqu’à obtenir une sauce qui enrobe les lentilles."
+          },
+          {
+            "etape": "Répartir",
+            "detail": "Couper le feu et incorporer les 125 g de yaourt nature sans refaire bouillir. Servir la moitié du riz et du curry ; mettre l’autre moitié dans un tupperware."
+          }
+        ]
+      },
+      {
+        "plat": "Salade de haricots rouges, maïs, concombre et tomates, pain complet",
+        "portions": "2 dîners · 1 personne",
+        "items": [
+          {
+            "pilier": "proteine",
+            "nom": "haricots rouges cuits",
+            "qte": "250 g égouttés"
+          },
+          {
+            "pilier": "glucide",
+            "nom": "maïs",
+            "qte": "140 g égouttés"
+          },
+          {
+            "pilier": "legume",
+            "nom": "concombre",
+            "qte": "1"
+          },
+          {
+            "pilier": "legume",
+            "nom": "tomates",
+            "qte": "300 g"
+          },
+          {
+            "pilier": "glucide",
+            "nom": "pain complet",
+            "qte": "160 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "citron",
+            "qte": "1"
+          },
+          {
+            "pilier": "extra",
+            "nom": "moutarde",
+            "qte": "15 g"
+          },
+          {
+            "pilier": "gras",
+            "nom": "huile d’olive",
+            "qte": "15 ml"
+          },
+          {
+            "pilier": "extra",
+            "nom": "cumin moulu",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "sel",
+            "qte": "1 g"
+          },
+          {
+            "pilier": "extra",
+            "nom": "poivre",
+            "qte": "0,5 g"
+          }
+        ],
+        "recette": [
+          {
+            "etape": "Préparer",
+            "detail": "Égoutter et rincer les haricots rouges et le maïs ; peser respectivement 250 g et 140 g après égouttage. Laver le concombre et les tomates. Retirer les extrémités du concombre et les pédoncules des tomates, puis couper les légumes en petits dés."
+          },
+          {
+            "etape": "Faire la sauce",
+            "detail": "Presser le citron dans un grand saladier. Ajouter la moutarde, l’huile, le cumin, le sel et le poivre ; mélanger énergiquement à la fourchette jusqu’à obtenir une sauce homogène."
+          },
+          {
+            "etape": "Assembler",
+            "detail": "Ajouter les haricots rouges, le maïs, le concombre et les tomates dans le saladier. Mélanger doucement avec deux cuillères pour répartir la sauce sans écraser les haricots."
+          },
+          {
+            "etape": "Répartir",
+            "detail": "Servir la moitié de la salade avec 80 g de pain complet ; mettre l’autre moitié de la salade dans un tupperware et garder les 80 g de pain restants séparés pour l’autre dîner."
+          }
+        ]
+      }
+    ]
+  },
   "attente": null
 }
