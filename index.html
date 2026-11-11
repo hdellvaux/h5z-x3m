@@ -190,6 +190,7 @@
   /* ---------- tabs ---------- */
   .tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: clamp(1.4rem, 5vw, 2.2rem);
     border-bottom: 1px solid var(--line);
@@ -371,7 +372,8 @@
     </header>
 
     <nav class="tabs" aria-label="Sections du site">
-      <a class="tab-btn" href="./" aria-current="page">Recettes</a>
+      <a class="tab-btn" href="menu-precedent.html">1. menu précédent</a>
+      <a class="tab-btn" href="index.html" aria-current="page">2. dernier menu</a>
       <a class="tab-btn" href="instructions.html">Instructions pour Claude</a>
     </nav>
 

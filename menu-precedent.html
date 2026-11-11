@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#efe6d4" />
+<title>1. menu précédent — À table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: clamp(1.4rem, 5vw, 3.5rem) clamp(1rem, 5vw, 2rem) 4rem;
+    background: #efe6d4;
+    color: #2a2620;
+    font: 1rem/1.5 "Hanken Grotesk", system-ui, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  header { text-align: center; }
+  h1 { font: 500 clamp(2rem, 8vw, 3rem)/1.1 "Fraunces", Georgia, serif; }
+  nav { display: flex; flex-wrap: wrap; gap: 1.5rem; border-bottom: 1px solid #d8ccb4; margin: 2rem 0; }
+  nav a { padding: 0.5rem 0; color: #6c6356; text-decoration: none; font-size: 0.85rem; }
+  nav a[aria-current="page"] { color: #b9532e; border-bottom: 2px solid #b9532e; }
+  .empty { background: #f6efe1; border: 1px solid #d8ccb4; border-radius: 14px; padding: 1.5rem; }
+</style>
+</head>
+<body>
+  <main>
+    <header><h1>1. menu précédent</h1></header>
+    <nav aria-label="Sections du site">
+      <a href="menu-precedent.html" aria-current="page">1. menu précédent</a>
+      <a href="index.html">2. dernier menu</a>
+      <a href="instructions.html">Instructions pour Claude</a>
+    </nav>
+    <p class="empty">Aucun menu précédent.</p>
+  </main>
+</body>
+</html>
