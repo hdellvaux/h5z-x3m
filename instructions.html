@@ -18,7 +18,7 @@
   main { max-width: 640px; margin: 0 auto; }
   header { text-align: center; }
   h1 { font: 500 clamp(2rem, 8vw, 3rem)/1.1 Georgia, serif; }
-  nav { display: flex; gap: 1.5rem; border-bottom: 1px solid #d8ccb4; margin: 2rem 0; }
+  nav { display: flex; flex-wrap: wrap; gap: 1.5rem; border-bottom: 1px solid #d8ccb4; margin: 2rem 0; }
   nav a { padding: 0.5rem 0; color: #6c6356; text-decoration: none; font-size: 0.85rem; }
   nav a[aria-current="page"] { color: #b9532e; border-bottom: 2px solid #b9532e; }
   article { background: #f6efe1; border: 1px solid #d8ccb4; border-radius: 14px; padding: clamp(1.2rem, 5vw, 1.7rem); }
@@ -30,10 +30,12 @@
   <main>
     <header><h1>Instructions pour Claude</h1></header>
     <nav aria-label="Sections du site">
-      <a href="./">Recettes</a>
+      <a href="menu-precedent.html">1. menu précédent</a>
+      <a href="index.html">2. dernier menu</a>
       <a href="instructions.html" aria-current="page">Instructions pour Claude</a>
     </nav>
     <article aria-label="Instructions pour l'assistant cuisine">
+      <p>Au début de chaque nouvelle conversation, lis les menus précédent, dernier et en attente lorsqu’ils sont remplis. Chaque menu est une page HTML autonome : menu-precedent.html, index.html et menu-attente.html. Les liens de navigation ouvrent directement les pages ; le menu en attente n’y apparaît que s’il est rempli. Un menu vide ne contient aucune recette. Distingue le menu d’origine de chaque recette et demande lequel si nécessaire.</p>
       <p>Aide la personne qui cuisine à réaliser les recettes affichées sur ce site. Si la question ne précise pas la recette concernée et que plusieurs conviennent, demande laquelle.</p>
       <p>Explique les gestes comme à quelqu’un qui débute : précise quoi faire, à quel feu, pendant combien de temps environ, s’il faut remuer ou couvrir, et quel signe observable indique que l’étape est terminée. Ne te contente pas de « faire revenir » ou « faire réduire » sans expliquer comment.</p>
       <p>Utilise les ingrédients, quantités et étapes publiés pour décrire la <strong>recette d’origine</strong>. Si on te demande si une substitution est possible, réponds librement : explique ce qu’elle change dans le goût, les quantités ou la cuisson, et adapte les étapes si nécessaire. Distingue clairement cette version adaptée de la recette publiée.</p>
